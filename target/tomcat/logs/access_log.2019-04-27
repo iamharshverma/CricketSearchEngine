@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [27/Apr/2019:15:35:47 -0500] "GET / HTTP/1.1" 200 20892 http-bio-8080-exec-1 33
+0:0:0:0:0:0:0:1 - - [27/Apr/2019:15:35:47 -0500] "GET /js/bootstrap.min.js HTTP/1.1" 200 36868 http-bio-8080-exec-2 3
+0:0:0:0:0:0:0:1 - - [27/Apr/2019:15:35:47 -0500] "GET /css/bootstrap.min.css HTTP/1.1" 200 121260 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [27/Apr/2019:15:35:47 -0500] "GET /css/logo.jpg HTTP/1.1" 200 32812 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [27/Apr/2019:15:35:47 -0500] "GET /css/style.css HTTP/1.1" 304 - http-bio-8080-exec-5 2
+0:0:0:0:0:0:0:1 - - [27/Apr/2019:15:35:47 -0500] "GET /css/logo_cricket_google.png HTTP/1.1" 304 - http-bio-8080-exec-10 3

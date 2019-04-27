@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+    <display-name>SimpleJspServletDB</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <description></description>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>com.db_design.controller.ServletHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/MainServletPath</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>ClusterServlet</display-name>
+        <servlet-name>ClusterServlet</servlet-name>
+        <servlet-class>com.db_design.controller.ClusterServletHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClusterServlet</servlet-name>
+        <url-pattern>/ClusterServletPath</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>ClusterServlet2</display-name>
+        <servlet-name>ClusterServlet2</servlet-name>
+        <servlet-class>com.db_design.controller.ClusterServletHandler2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClusterServlet2</servlet-name>
+        <url-pattern>/ClusterServletPath2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>ClusterServlet4</display-name>
+        <servlet-name>ClusterServlet4</servlet-name>
+        <servlet-class>com.db_design.controller.ClusterServletHandler4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClusterServlet4</servlet-name>
+        <url-pattern>/ClusterServletPath4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>ClusterServlet3</display-name>
+        <servlet-name>ClusterServlet3</servlet-name>
+        <servlet-class>com.db_design.controller.ClusterServletHandler3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClusterServlet3</servlet-name>
+        <url-pattern>/ClusterServletPath3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>QexpServlet</display-name>
+        <servlet-name>QexpServlet</servlet-name>
+        <servlet-class>com.db_design.controller.QueryExpansionServletHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QexpServlet</servlet-name>
+        <url-pattern>/QexpServletPath</url-pattern>
+    </servlet-mapping>
+</web-app>
