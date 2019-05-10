@@ -14,10 +14,10 @@ import networkx as nx
 clusters = {}
 
 def readClusters():
-    filename = 'completelink.txt'
+    filename = '/Users/harshverma/Downloads/IR_Final/IR/crawling/Clustering/kmeansFinalPartComplete.txt'
     with open(filename) as f:
         for line in f:
-            lis = line.split(',')
+            lis = line.split(' cluster: ')
             clusters[lis[0]] = lis[1]
     return
 
@@ -34,9 +34,9 @@ def findMaxCluster(urls):
             break
         if urls[i] in clusters:
             clust = clusters[urls[i]]
-            counter[clust] += 1    
-    return max(counter, key=counter.get)  
-    
+            counter[clust] += 1
+    return max(counter, key=counter.get)
+
 
 def getFinalJsonObjs(maxFreqCluster, urlDict):
     result = []
@@ -67,10 +67,10 @@ class handleClustering(Resource):
         maxFreqCluster = findMaxCluster(list(urlDict.keys()))
         finalObjs = getFinalJsonObjs(maxFreqCluster, urlDict)
         return {"results":finalObjs}
-    
+
 api.add_resource(handleClustering, '/getAgglomerativeClusteringResults/')
 
-if __name__=='__main__':    
+if __name__=='__main__':
     print("Clustering Server started...")
     readClusters()
     app.run(port=5003)

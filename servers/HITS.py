@@ -84,14 +84,14 @@ def createGraph(urlIDs,outlinks,inlinks):
             for temp in outlinks[id]:
                 G.add_edge(id,temp)
                 count+=1
-                if count>5:
+                if count>50:
                     break
         if id in inlinks:
             count=0
             for temp in inlinks[id]:
                 G.add_edge(temp,id)
                 count+=1
-                if count>5:
+                if count>50:
                     break
     return nx.hits(G,max_iter=100,tol=0.1)
 

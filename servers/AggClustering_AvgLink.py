@@ -14,11 +14,11 @@ import networkx as nx
 clusters = {}
 
 def readClusters():
-    filename = '/Users/harshverma/PycharmProjects/IR_Project_Crawler/Food-Recipes---Search-Engine/servers/average.txt'
+    filename = '/Users/harshverma/Downloads/IR_Final/IR/crawling/Clustering/kmeansFinalAvg.txt'
     with open(filename) as f:
         for line in f:
             print(line)
-            lis = line.split(': ')
+            lis = line.split(' cluster: ')
             clusters[lis[0]] = lis[1]
     return
 
@@ -35,7 +35,7 @@ def findMaxCluster(urls):
     for i in range(len(urls)):
         if i == 15:
             break
-        if urls[i] clusters:
+        if urls[i] in clusters:
             print("URLS" , urls[i])
             print("Clusters" ,clusters)
             clust = clusters[urls[i]]
