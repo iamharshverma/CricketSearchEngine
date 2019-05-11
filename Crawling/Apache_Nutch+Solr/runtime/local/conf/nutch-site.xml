@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<!-- Do not modify this file directly.  Instead, copy entries that you -->
+<!-- wish to modify from this file into nutch-site.xml and change them -->
+<!-- there.  If nutch-site.xml does not already exist, create it.      -->
+
+<configuration>
+<property>
+     <name>http.agent.name</name>
+     <value>nutch-1.15-crawler</value>
+</property>
+<property>
+    <name>storage.data.store.class</name>
+    <value>org.apache.gora.mongodb.store.MongoStore</value>
+    <description>Default class for storing data</description>
+</property>
+<property>
+  <name>http.tls.certificates.check</name>
+  <value>false</value>
+  <description>
+    Whether to check the TLS/SSL server certificates for validity.
+    If true invalid (e.g., self-signed or expired) certificates are
+    rejected and the https connection is failed.  If false insecure
+    TLS/SSL connections are allowed.  Note that this property is
+    currently not supported by all http/https protocol plugins.
+  </description>
+</property>
+<property>
+    <name>plugin.includes</name>
+    <value>protocol-http|protocol-httpclient|urlfilter-regex|index-(basic|more)|query-(basic|site|url|lang)|indexer-solr|nutch-extensionpoints|protocol-httpclient|urlfilter-regex|parse-(text|html|msexcel|msword|mspowerpoint|pdf)|summary-basic|scoring-opic|urlnormalizer-(pass|regex|basic)protocol-http|urlfilter-regex|parse-(html|tika|metatags)|index-(basic|anchor|more|metadata)</value>
+</property>
+<property>
+ <name>db.ignore.external.links</name>
+ <value>true</value>
+</property>
+<property>
+ <name>db.ignore.external.links.mode</name>
+ <value>byDomain</value>
+</property>
+<property>
+  <name>plugin.includes</name>
+  <value>protocol-http|protocol-selenium|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|urlnormalizer-(pass|regex|basic)|scoring-opic|indexer-solr</value>
+  <description>Regular expression naming plugin directory names to
+        include.  Any plugin not matching this expression is excluded.
+        In any case you need at least include the nutch-extensionpoints plugin. By
+        default Nutch includes crawling just HTML and plain text via HTTP,
+        and basic indexing and search plugins. In order to use HTTPS please enable
+        protocol-httpclient, but be aware of possible intermittent problems with the
+        underlying commons-httpclient library.
+  </description>
+</property>
+<property>
+  <name>selenium.driver</name>
+  <value>firefox</value>
+  <description>
+            A String value representing the flavour of Selenium
+            WebDriver() to use. Currently the following options
+            exist - 'firefox', 'chrome', 'safari', 'opera' and 'remote'.
+            If 'remote' is used it is essential to also set correct properties for
+            'selenium.hub.port', 'selenium.hub.path', 'selenium.hub.host' and
+            'selenium.hub.protocol'.
+  </description>
+</property>
+<property>
+  <name>selenium.firefox.headless</name>
+  <value>true</value>
+  <description>A Boolean value representing if firefox should
+            run headless . make sure that firefox version is 55 or later,
+            and selenium webDriver version is 3.6.0 or later. The default value is false.
+            Currently this option exist for - 'firefox'
+  </description>
+</property>
+<property> Add the plugin folders to your installation's NUTCH_HOME/src/plugin directory
+  <name>selenium.take.screenshot</name>
+  <value>false</value>
+  <description>
+            Boolean property determining whether the protocol-selenium
+            WebDriver should capture a screenshot of the URL. If set to
+            true remember to define the 'selenium.screenshot.location'
+            property as this determines the location screenshots should be
+            persisted to on HDFS. If that property is not set, screenshots
+            are simply discarded.
+  </description>
+</property>
+<property>
+  <name>selenium.screenshot.location</name>
+  <value></value>
+  <description>
+            The location on disk where a URL screenshot should be saved
+            to if the 'selenium.take.screenshot' proerty is set to true.
+            By default this is null, in this case screenshots held in memory
+            are simply discarded.
+  </description>
+</property>
+<property>
+  <name>selenium.hub.port</name>
+  <value>4444</value>
+  <description>Selenium Hub Location connection port</description>
+</property>
+<property>
+  <name>selenium.hub.path</name>
+  <value>/wd/hub</value>
+  <description>Selenium Hub Location connection path</description>
+</property>
+<property>
+  <name>selenium.hub.host</name>
+  <value>localhost</value>
+  <description>Selenium Hub Location connection host</description>
+</property>
+<property>
+  <name>selenium.hub.protocol</name>
+  <value>http</value>
+  <description>Selenium Hub Location connection protocol</description>
+</property>
+<property>
+  <name>selenium.grid.driver</name>
+  <value>firefox</value>
+  <description>A String value representing the flavour of Selenium
+            WebDriver() used on the selenium grid. Currently the following options
+            exist - 'firefox'
+  </description>
+</property>
+<property>
+  <name>selenium.grid.binary</name>
+  <value></value>
+  <description>A String value representing the path to the browser binary
+            location for each node
+  </description>
+</property>
+<property>
+  <name>libselenium.page.load.delay</name>
+  <value>2</value>
+  <description>
+            The delay in seconds to use when loading a page with lib-selenium. This
+            setting is used by protocol-selenium and protocol-interactiveselenium
+            since they depending on lib-selenium for fetching.
+  </description>
+</property>
+<property>
+  <name>http.timeout</name>
+  <value>10000</value>
+  <description>The default network timeout, in milliseconds.</description>
+</property>
+<property>
+  <name>fetcher.threads.per.queue</name>
+  <value>50</value>
+  <description>This number is the maximum number of threads that
+    should be allowed to access a queue at one time. Replaces
+    deprecated parameter 'fetcher.threads.per.host'.
+  </description>
+</property>
+<property>
+  <name>file.content.ignored</name>
+  <value>true</value>
+  <description>If true, no file content will be saved during fetch.
+  And it is probably what we want to set most of time, since file:// URLs
+  are meant to be local and we can always use them directly at parsing
+  and indexing stages. Otherwise file contents will be saved.
+  !! NO IMPLEMENTED YET !!
+  </description>
+</property>
+<property>
+  <name>http.robots.403.allow</name>
+  <value>true</value>
+  <description>Some servers return HTTP status 403 (Forbidden) if
+  /robots.txt doesn't exist. This should probably mean that we are
+  allowed to crawl the site nonetheless. If this is set to false,
+  then such sites will be treated as forbidden.
+  </description>
+</property>
+<property>
+  <name>http.max.delays</name>
+  <value>10</value>
+  <description>The number of times a thread will delay when trying to
+  fetch a page.  Each time it finds that a host is busy, it will wait
+  fetcher.server.delay.  After http.max.delays attempts, it will give
+  up on the page for now.
+  </description>
+</property>
+<property>
+  <name>fetcher.throughput.threshold.pages</name>
+  <value>1</value>
+  <description>The threshold of minimum pages per second. If the fetcher downloads less
+  pages per second than the configured threshold, the fetcher stops, preventing slow queue's
+  from stalling the throughput. This threshold must be an integer. This can be useful when
+  fetcher.timelimit.mins is hard to determine. The default value of -1 disables this check.
+  </description>
+</property>
+<property>
+  <name>fetcher.server.min.delay</name>
+  <value>1.0</value>
+  <description>The minimum number of seconds the fetcher will delay between
+  successive requests to the same server. This value is applicable ONLY
+  if fetcher.threads.per.host is greater than 1 (i.e. the host blocking
+  is turned off).</description>
+</property>
+<property>
+  <name>fetcher.server.delay</name>
+  <value>0.1</value>
+  <description>The number of seconds the fetcher will delay between
+   successive requests to the same server.</description>
+</property>
+<property>
+  <name>fetcher.threads.fetch</name>
+  <value>500</value>
+  <description>The number of FetcherThreads the fetcher should use.
+  This is also determines the maximum number of requests that are
+  made at once (each FetcherThread handles one connection). The total
+  number of threads running in distributed mode will be the number of
+  fetcher threads * number of nodes as fetcher has one map task per node.
+  </description>
+</property>
+<property>
+  <name>fetcher.threads.per.host</name>
+  <value>50</value>
+  <description>This number is the maximum number of threads that
+    should be allowed to access a host at one time.</description>
+</property>
+<property>
+  <name>link.ignore.internal.host</name>
+  <value>false</value>
+  <description>Ignore outlinks to the same hostname.</description>
+</property>
+<property>
+  <name>link.ignore.internal.domain</name>
+  <value>false</value>
+  <description>Ignore outlinks to the same domain.</description>
+</property>
+<property>
+  <name>link.ignore.limit.page</name>
+  <value>false</value>
+  <description>Limit to only a single outlink to the same page.</description>
+</property>
+<property>
+  <name>link.ignore.limit.domain</name>
+  <value>false</value>
+  <description>Limit to only a single outlink to the same domain.</description>
+</property>
+<property>
+  <name>http.content.limit</name>
+  <value>-1</value>
+  <description>Content Limit</description>
+</property>
+<property>
+  <name>http.redirect.max</name>
+  <value>1</value>
+  <description>The maximum number of redirects the fetcher will follow when
+  trying to fetch a page. If set to negative or 0, fetcher won't immediately
+  follow redirected URLs, instead it will record them for later fetching.
+  </description>
+</property>
+<property>
+  <name>ftp.timeout</name>
+  <value>10000</value>
+  <description>Default timeout for ftp client socket, in millisec.
+  Please also see ftp.keep.connection below.</description>
+</property>
+<property>
+  <name>ftp.server.timeout</name>
+  <value>10000</value>
+  <description>An estimation of ftp server idle time, in millisec.
+  Typically it is 120000 millisec for many ftp servers out there.
+  Better be conservative here. Together with ftp.timeout, it is used to
+  decide if we need to delete (annihilate) current ftp.client instance and
+  force to start another ftp.client instance anew. This is necessary because
+  a fetcher thread may not be able to obtain next request from queue in time
+  (due to idleness) before our ftp client times out or remote server
+  disconnects. Used only when ftp.keep.connection is true (please see below).
+  </description>
+</property>
+<property>
+  <name>ftp.keep.connection</name>
+  <value>false</value>
+  <description>Whether to keep ftp connection. Useful if crawling same host
+  again and again. When set to true, it avoids connection, login and dir list
+  parser setup for subsequent urls. If it is set to true, however, you must
+  make sure (roughly):
+  (1) ftp.timeout is less than ftp.server.timeout
+  (2) ftp.timeout is larger than (fetcher.threads.fetch * fetcher.server.delay)
+  Otherwise there will be too many "delete client because idled too long"
+  messages in thread logs.
+ </description>
+</property>
+<property>
+  <name>http.content.limit</name>
+  <value>65536</value>
+  <description>The length limit for downloaded content, in bytes.
+  If this value is nonnegative (>=0), content longer than it will be truncated;
+  otherwise, no truncation at all.
+  </description>
+</property>
+<property>
+  <name>generate.max.count</name>
+  <value>-1</value>
+</property>
+</configuration>

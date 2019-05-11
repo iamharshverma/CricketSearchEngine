@@ -1,0 +1,1315 @@
+2018-11-17 13:17:40,723 INFO  crawl.Injector - Injector: starting at 2018-11-17 13:17:40
+2018-11-17 13:17:40,744 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2018-11-17 13:17:40,745 INFO  crawl.Injector - Injector: urlDir: urls
+2018-11-17 13:17:40,745 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2018-11-17 13:17:41,726 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:17:42,978 ERROR crawl.Injector - Injector: java.io.IOException: lock file crawl/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:51)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:81)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:199)
+	at org.apache.nutch.crawl.Injector.inject(Injector.java:400)
+	at org.apache.nutch.crawl.Injector.run(Injector.java:570)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Injector.main(Injector.java:535)
+
+2018-11-17 13:24:24,644 INFO  crawl.Injector - Injector: starting at 2018-11-17 13:24:24
+2018-11-17 13:24:24,645 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2018-11-17 13:24:24,645 INFO  crawl.Injector - Injector: urlDir: urls
+2018-11-17 13:24:24,645 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2018-11-17 13:24:24,733 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:24:25,127 INFO  crawl.Injector - Injecting seed URL file file:/home/yash/Project/crawling/apache-nutch-1.15/urls/seeds.txt
+2018-11-17 13:24:27,673 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:24:27,674 INFO  mapreduce.Job - Running job: job_local613311371_0001
+2018-11-17 13:24:28,679 INFO  mapreduce.Job - Job job_local613311371_0001 running in uber mode : false
+2018-11-17 13:24:28,721 INFO  mapreduce.Job -  map 0% reduce 0%
+2018-11-17 13:24:29,698 INFO  crawl.Injector - Injector: overwrite: false
+2018-11-17 13:24:29,698 INFO  crawl.Injector - Injector: update: false
+2018-11-17 13:24:29,726 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:24:29,729 INFO  mapreduce.Job - Job job_local613311371_0001 completed successfully
+2018-11-17 13:24:29,777 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=1843664
+		FILE: Number of bytes written=2606178
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=2
+		Map output bytes=105
+		Map output materialized bytes=115
+		Input split bytes=292
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=115
+		Reduce input records=2
+		Reduce output records=2
+		Spilled Records=4
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=17
+		Total committed heap usage (bytes)=520093696
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	injector
+		urls_injected=2
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=445
+2018-11-17 13:24:29,794 INFO  crawl.Injector - Injector: Total urls rejected by filters: 0
+2018-11-17 13:24:29,794 INFO  crawl.Injector - Injector: Total urls injected after normalization and filtering: 2
+2018-11-17 13:24:29,794 INFO  crawl.Injector - Injector: Total urls injected but already in CrawlDb: 0
+2018-11-17 13:24:29,794 INFO  crawl.Injector - Injector: Total new urls injected: 2
+2018-11-17 13:24:29,795 INFO  crawl.Injector - Injector: finished at 2018-11-17 13:24:29, elapsed: 00:00:05
+2018-11-17 13:26:37,863 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:26:38,140 INFO  crawl.Generator - Generator: starting at 2018-11-17 13:26:38
+2018-11-17 13:26:38,140 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2018-11-17 13:26:38,140 INFO  crawl.Generator - Generator: filtering: true
+2018-11-17 13:26:38,140 INFO  crawl.Generator - Generator: normalizing: true
+2018-11-17 13:26:38,142 INFO  crawl.Generator - Generator: topN: 30
+2018-11-17 13:26:38,149 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2018-11-17 13:26:38,721 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:26:38,722 INFO  mapreduce.Job - Running job: job_local1673112308_0001
+2018-11-17 13:26:39,080 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2018-11-17 13:26:39,080 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2018-11-17 13:26:39,080 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2018-11-17 13:26:39,724 INFO  mapreduce.Job - Job job_local1673112308_0001 running in uber mode : false
+2018-11-17 13:26:39,727 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:26:39,729 INFO  mapreduce.Job - Job job_local1673112308_0001 completed successfully
+2018-11-17 13:26:39,773 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1843852
+		FILE: Number of bytes written=2618145
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=2
+		Map output bytes=163
+		Map output materialized bytes=173
+		Input split bytes=155
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=173
+		Reduce input records=2
+		Reduce output records=2
+		Spilled Records=4
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=10
+		Total committed heap usage (bytes)=648019968
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=219
+	File Output Format Counters 
+		Bytes Written=607
+2018-11-17 13:26:39,775 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2018-11-17 13:26:40,776 INFO  crawl.Generator - Generator: segment: crawl/segments/20181117132640
+2018-11-17 13:26:40,952 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:26:40,952 INFO  mapreduce.Job - Running job: job_local746315840_0002
+2018-11-17 13:26:41,953 INFO  mapreduce.Job - Job job_local746315840_0002 running in uber mode : false
+2018-11-17 13:26:41,954 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:26:41,956 INFO  mapreduce.Job - Job job_local746315840_0002 completed successfully
+2018-11-17 13:26:41,960 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3688394
+		FILE: Number of bytes written=5228591
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=2
+		Map output bytes=202
+		Map output materialized bytes=212
+		Input split bytes=191
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=212
+		Reduce input records=2
+		Reduce output records=2
+		Spilled Records=4
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=858783744
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=299
+	File Output Format Counters 
+		Bytes Written=261
+2018-11-17 13:26:41,962 INFO  crawl.Generator - Generator: finished at 2018-11-17 13:26:41, elapsed: 00:00:03
+2018-11-17 13:26:58,798 INFO  fetcher.Fetcher - Fetcher: starting at 2018-11-17 13:26:58
+2018-11-17 13:26:58,798 INFO  fetcher.Fetcher - Fetcher: segment: crawl/segments/20181117132640
+2018-11-17 13:26:58,996 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:26:59,765 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:26:59,766 INFO  mapreduce.Job - Running job: job_local340858120_0001
+2018-11-17 13:26:59,919 INFO  fetcher.FetchItemQueues - Using queue mode : byHost
+2018-11-17 13:26:59,919 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2018-11-17 13:26:59,919 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2018-11-17 13:26:59,927 INFO  fetcher.QueueFeeder - QueueFeeder finished: total 2 records hit by time limit : 0
+2018-11-17 13:27:00,110 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,136 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,136 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,136 INFO  fetcher.FetcherThread - FetcherThread 42 fetching https://www.walmart.com/ (queue crawl delay=5000ms)
+2018-11-17 13:27:00,136 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,141 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,141 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/ (queue crawl delay=5000ms)
+2018-11-17 13:27:00,141 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,142 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,142 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,142 INFO  fetcher.FetcherThread - FetcherThread 44 has no more work available
+2018-11-17 13:27:00,143 INFO  fetcher.FetcherThread - FetcherThread 44 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,143 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,143 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,144 INFO  fetcher.FetcherThread - FetcherThread 45 has no more work available
+2018-11-17 13:27:00,144 INFO  fetcher.FetcherThread - FetcherThread 45 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,144 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,144 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,145 INFO  fetcher.FetcherThread - FetcherThread 46 has no more work available
+2018-11-17 13:27:00,145 INFO  fetcher.FetcherThread - FetcherThread 46 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,145 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,145 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,146 INFO  fetcher.FetcherThread - FetcherThread 47 has no more work available
+2018-11-17 13:27:00,147 INFO  fetcher.FetcherThread - FetcherThread 47 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,147 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,147 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,148 INFO  fetcher.FetcherThread - FetcherThread 48 has no more work available
+2018-11-17 13:27:00,148 INFO  fetcher.FetcherThread - FetcherThread 48 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,148 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,148 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,149 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:00,149 INFO  fetcher.FetcherThread - FetcherThread 49 has no more work available
+2018-11-17 13:27:00,149 INFO  fetcher.FetcherThread - FetcherThread 49 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,149 INFO  fetcher.FetcherThread - FetcherThread 50 has no more work available
+2018-11-17 13:27:00,149 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:27:00,151 INFO  fetcher.FetcherThread - FetcherThread 50 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,151 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2018-11-17 13:27:00,151 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2018-11-17 13:27:00,151 INFO  fetcher.FetcherThread - FetcherThread 51 has no more work available
+2018-11-17 13:27:00,152 INFO  fetcher.FetcherThread - FetcherThread 51 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:27:00,512 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.proxy.host = null
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.proxy.port = 8080
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.proxy.exception.list = false
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.timeout = 10000
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.content.limit = 65536
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.agent = nutch-1.15-crawler/Nutch-1.15
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2018-11-17 13:27:00,513 INFO  httpclient.Http - http.enable.cookie.header = true
+2018-11-17 13:27:00,537 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.proxy.host = null
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.proxy.port = 8080
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.proxy.exception.list = false
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.timeout = 10000
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.content.limit = 65536
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.agent = nutch-1.15-crawler/Nutch-1.15
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2018-11-17 13:27:00,538 INFO  httpclient.Http - http.enable.cookie.header = true
+2018-11-17 13:27:00,768 INFO  mapreduce.Job - Job job_local340858120_0001 running in uber mode : false
+2018-11-17 13:27:00,786 INFO  mapreduce.Job -  map 0% reduce 0%
+2018-11-17 13:27:01,155 INFO  fetcher.Fetcher - -activeThreads=2, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=2
+2018-11-17 13:27:01,964 INFO  fetcher.FetcherThread - FetcherThread 42 has no more work available
+2018-11-17 13:27:01,964 INFO  fetcher.FetcherThread - FetcherThread 42 -finishing thread FetcherThread, activeThreads=1
+2018-11-17 13:27:02,009 INFO  fetcher.FetcherThread - FetcherThread 43 has no more work available
+2018-11-17 13:27:02,009 INFO  fetcher.FetcherThread - FetcherThread 43 -finishing thread FetcherThread, activeThreads=0
+2018-11-17 13:27:02,156 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=0
+2018-11-17 13:27:02,156 INFO  fetcher.Fetcher - -activeThreads=0
+2018-11-17 13:27:02,793 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:27:02,795 INFO  mapreduce.Job - Job job_local340858120_0001 completed successfully
+2018-11-17 13:27:02,850 INFO  mapreduce.Job - Counters: 32
+	File System Counters
+		FILE: Number of bytes read=2112754
+		FILE: Number of bytes written=3037935
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=4
+		Map output bytes=134542
+		Map output materialized bytes=134564
+		Input split bytes=173
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=134564
+		Reduce input records=4
+		Reduce output records=4
+		Spilled Records=8
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=97
+		Total committed heap usage (bytes)=644874240
+	FetcherStatus
+		bytes_downloaded=131072
+		success=2
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=261
+	File Output Format Counters 
+		Bytes Written=30435
+2018-11-17 13:27:02,852 INFO  fetcher.Fetcher - Fetcher: finished at 2018-11-17 13:27:02, elapsed: 00:00:04
+2018-11-17 13:27:37,981 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:27:38,256 INFO  parse.ParseSegment - ParseSegment: starting at 2018-11-17 13:27:38
+2018-11-17 13:27:38,257 INFO  parse.ParseSegment - ParseSegment: segment: crawl/segments/20181117132640
+2018-11-17 13:27:38,845 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:27:38,846 INFO  mapreduce.Job - Running job: job_local934335475_0001
+2018-11-17 13:27:39,464 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2018-11-17 13:27:39,474 INFO  parse.ParseSegment - Parsed (284ms):https://www.etsy.com/
+2018-11-17 13:27:39,490 INFO  parse.ParseSegment - Parsed (13ms):https://www.walmart.com/
+2018-11-17 13:27:39,618 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:27:39,848 INFO  mapreduce.Job - Job job_local934335475_0001 running in uber mode : false
+2018-11-17 13:27:39,849 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:27:39,850 INFO  mapreduce.Job - Job job_local934335475_0001 completed successfully
+2018-11-17 13:27:39,867 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=1927718
+		FILE: Number of bytes written=2650480
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=2
+		Map output bytes=12819
+		Map output materialized bytes=12833
+		Input split bytes=171
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=12833
+		Reduce input records=2
+		Reduce output records=2
+		Spilled Records=4
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=11
+		Total committed heap usage (bytes)=648019968
+	ParserStatus
+		success=2
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=29475
+	File Output Format Counters 
+		Bytes Written=0
+2018-11-17 13:27:39,868 INFO  parse.ParseSegment - ParseSegment: finished at 2018-11-17 13:27:39, elapsed: 00:00:01
+2018-11-17 13:27:47,537 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:27:47,814 INFO  crawl.CrawlDb - CrawlDb update: starting at 2018-11-17 13:27:47
+2018-11-17 13:27:47,814 INFO  crawl.CrawlDb - CrawlDb update: db: crawl/crawldb
+2018-11-17 13:27:47,814 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl/segments/20181117132640]
+2018-11-17 13:27:47,814 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2018-11-17 13:27:47,814 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: false
+2018-11-17 13:27:47,814 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: false
+2018-11-17 13:27:47,814 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2018-11-17 13:27:47,816 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2018-11-17 13:27:48,409 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:27:48,410 INFO  mapreduce.Job - Running job: job_local565304255_0001
+2018-11-17 13:27:49,007 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2018-11-17 13:27:49,008 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2018-11-17 13:27:49,008 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2018-11-17 13:27:49,413 INFO  mapreduce.Job - Job job_local565304255_0001 running in uber mode : false
+2018-11-17 13:27:49,416 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:27:49,419 INFO  mapreduce.Job - Job job_local565304255_0001 completed successfully
+2018-11-17 13:27:49,472 INFO  mapreduce.Job - Counters: 32
+	File System Counters
+		FILE: Number of bytes read=3708659
+		FILE: Number of bytes written=5226896
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=43
+		Map output records=43
+		Map output bytes=2703
+		Map output materialized bytes=2809
+		Input split bytes=500
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=30
+		Reduce shuffle bytes=2809
+		Reduce input records=43
+		Reduce output records=30
+		Spilled Records=86
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=11
+		Total committed heap usage (bytes)=1631059968
+	CrawlDB status
+		db_fetched=2
+		db_unfetched=28
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=3431
+	File Output Format Counters 
+		Bytes Written=2598
+2018-11-17 13:27:49,481 INFO  crawl.CrawlDb - CrawlDb update: finished at 2018-11-17 13:27:49, elapsed: 00:00:01
+2018-11-17 13:27:55,885 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:27:56,200 INFO  crawl.LinkDb - LinkDb: starting at 2018-11-17 13:27:56
+2018-11-17 13:27:56,200 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2018-11-17 13:27:56,200 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2018-11-17 13:27:56,200 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2018-11-17 13:27:56,201 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2018-11-17 13:27:56,201 INFO  crawl.LinkDb - LinkDb: adding segment: file:/home/yash/Project/crawling/apache-nutch-1.15/crawl/segments/20181117132640
+2018-11-17 13:27:56,791 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:27:56,792 INFO  mapreduce.Job - Running job: job_local83664125_0001
+2018-11-17 13:27:57,795 INFO  mapreduce.Job - Job job_local83664125_0001 running in uber mode : false
+2018-11-17 13:27:57,800 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:27:57,801 INFO  mapreduce.Job - Job job_local83664125_0001 completed successfully
+2018-11-17 13:27:57,825 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1849126
+		FILE: Number of bytes written=2601989
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=3
+		Map output bytes=179
+		Map output materialized bytes=191
+		Input split bytes=174
+		Combine input records=3
+		Combine output records=3
+		Reduce input groups=3
+		Reduce shuffle bytes=191
+		Reduce input records=3
+		Reduce output records=3
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=520093696
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2818
+	File Output Format Counters 
+		Bytes Written=596
+2018-11-17 13:27:57,825 INFO  crawl.LinkDb - LinkDb: merging with existing linkdb: crawl/linkdb
+2018-11-17 13:27:58,080 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:27:58,080 INFO  mapreduce.Job - Running job: job_local884826603_0002
+2018-11-17 13:27:59,081 INFO  mapreduce.Job - Job job_local884826603_0002 running in uber mode : false
+2018-11-17 13:27:59,082 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:27:59,083 INFO  mapreduce.Job - Job job_local884826603_0002 completed successfully
+2018-11-17 13:27:59,093 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3693726
+		FILE: Number of bytes written=5209495
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=3
+		Map output records=3
+		Map output bytes=179
+		Map output materialized bytes=191
+		Input split bytes=157
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=191
+		Reduce input records=3
+		Reduce output records=3
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=858783744
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=365
+	File Output Format Counters 
+		Bytes Written=596
+2018-11-17 13:27:59,102 INFO  crawl.LinkDb - LinkDb: finished at 2018-11-17 13:27:59, elapsed: 00:00:02
+2018-11-17 13:29:00,049 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:29:00,082 INFO  crawl.CrawlDbReader - CrawlDb dump: starting
+2018-11-17 13:29:00,082 INFO  crawl.CrawlDbReader - CrawlDb db: crawl/crawldb/
+2018-11-17 13:29:00,837 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:29:00,838 INFO  mapreduce.Job - Running job: job_local154952229_0001
+2018-11-17 13:29:01,841 INFO  mapreduce.Job - Job job_local154952229_0001 running in uber mode : false
+2018-11-17 13:29:01,844 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:29:01,846 INFO  mapreduce.Job - Job job_local154952229_0001 completed successfully
+2018-11-17 13:29:01,862 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1851926
+		FILE: Number of bytes written=2617390
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=30
+		Map output records=30
+		Map output bytes=1993
+		Map output materialized bytes=2061
+		Input split bytes=155
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=30
+		Reduce shuffle bytes=2061
+		Reduce input records=30
+		Reduce output records=30
+		Spilled Records=60
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=520093696
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2367
+	File Output Format Counters 
+		Bytes Written=8137
+2018-11-17 13:29:01,863 INFO  crawl.CrawlDbReader - CrawlDb dump: done
+2018-11-17 13:30:05,821 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:30:06,107 INFO  crawl.Generator - Generator: starting at 2018-11-17 13:30:06
+2018-11-17 13:30:06,107 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2018-11-17 13:30:06,108 INFO  crawl.Generator - Generator: filtering: true
+2018-11-17 13:30:06,108 INFO  crawl.Generator - Generator: normalizing: true
+2018-11-17 13:30:06,109 INFO  crawl.Generator - Generator: topN: 100
+2018-11-17 13:30:06,116 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2018-11-17 13:30:06,717 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:30:06,718 INFO  mapreduce.Job - Running job: job_local1588250649_0001
+2018-11-17 13:30:07,069 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2018-11-17 13:30:07,070 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2018-11-17 13:30:07,070 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2018-11-17 13:30:07,720 INFO  mapreduce.Job - Job job_local1588250649_0001 running in uber mode : false
+2018-11-17 13:30:07,723 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:30:07,726 INFO  mapreduce.Job - Job job_local1588250649_0001 completed successfully
+2018-11-17 13:30:07,768 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1852712
+		FILE: Number of bytes written=2635768
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=30
+		Map output records=28
+		Map output bytes=2392
+		Map output materialized bytes=2454
+		Input split bytes=155
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=2454
+		Reduce input records=28
+		Reduce output records=28
+		Spilled Records=56
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=7
+		Total committed heap usage (bytes)=648019968
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2367
+	File Output Format Counters 
+		Bytes Written=8904
+2018-11-17 13:30:07,770 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2018-11-17 13:30:08,771 INFO  crawl.Generator - Generator: segment: crawl/segments/20181117133008
+2018-11-17 13:30:08,923 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:30:08,923 INFO  mapreduce.Job - Running job: job_local1298052207_0002
+2018-11-17 13:30:09,925 INFO  mapreduce.Job - Job job_local1298052207_0002 running in uber mode : false
+2018-11-17 13:30:09,926 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:30:09,928 INFO  mapreduce.Job - Job job_local1298052207_0002 completed successfully
+2018-11-17 13:30:09,941 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3712566
+		FILE: Number of bytes written=5274380
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=28
+		Map output records=28
+		Map output bytes=3048
+		Map output materialized bytes=3110
+		Input split bytes=191
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=28
+		Reduce shuffle bytes=3110
+		Reduce input records=28
+		Reduce output records=28
+		Spilled Records=56
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=858783744
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2776
+	File Output Format Counters 
+		Bytes Written=2526
+2018-11-17 13:30:09,945 INFO  crawl.Generator - Generator: finished at 2018-11-17 13:30:09, elapsed: 00:00:03
+2018-11-17 13:30:40,618 INFO  fetcher.Fetcher - Fetcher: starting at 2018-11-17 13:30:40
+2018-11-17 13:30:40,619 INFO  fetcher.Fetcher - Fetcher: segment: crawl/segments/20181117133008
+2018-11-17 13:30:40,812 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:30:41,701 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:30:41,702 INFO  mapreduce.Job - Running job: job_local1495680352_0001
+2018-11-17 13:30:41,883 INFO  fetcher.FetchItemQueues - Using queue mode : byHost
+2018-11-17 13:30:41,883 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2018-11-17 13:30:41,883 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2018-11-17 13:30:41,924 INFO  fetcher.QueueFeeder - QueueFeeder finished: total 28 records hit by time limit : 0
+2018-11-17 13:30:42,094 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,105 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,108 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,109 INFO  fetcher.FetcherThread - FetcherThread 42 fetching https://omniture.walmart.com (queue crawl delay=5000ms)
+2018-11-17 13:30:42,109 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,109 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,109 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,110 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,110 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,111 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/de/ (queue crawl delay=5000ms)
+2018-11-17 13:30:42,113 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,113 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,111 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://beacon.walmart.com (queue crawl delay=5000ms)
+2018-11-17 13:30:42,114 INFO  fetcher.FetcherThread - FetcherThread 45 fetching https://omniture-ssl.walmart.com (queue crawl delay=5000ms)
+2018-11-17 13:30:42,122 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,124 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,125 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,125 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,129 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,129 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,130 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,130 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,131 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:30:42,131 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2018-11-17 13:30:42,136 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2018-11-17 13:30:42,140 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2018-11-17 13:30:42,288 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.proxy.host = null
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.proxy.port = 8080
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.proxy.exception.list = false
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.timeout = 10000
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.content.limit = 65536
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.agent = nutch-1.15-crawler/Nutch-1.15
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2018-11-17 13:30:42,288 INFO  httpclient.Http - http.enable.cookie.header = true
+2018-11-17 13:30:42,293 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.proxy.host = null
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.proxy.port = 8080
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.proxy.exception.list = false
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.timeout = 10000
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.content.limit = 65536
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.agent = nutch-1.15-crawler/Nutch-1.15
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2018-11-17 13:30:42,293 INFO  httpclient.Http - http.enable.cookie.header = true
+2018-11-17 13:30:42,294 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.proxy.host = null
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.proxy.port = 8080
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.proxy.exception.list = false
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.timeout = 10000
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.content.limit = 65536
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.agent = nutch-1.15-crawler/Nutch-1.15
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2018-11-17 13:30:42,294 INFO  httpclient.Http - http.enable.cookie.header = true
+2018-11-17 13:30:42,294 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.proxy.host = null
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.proxy.port = 8080
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.proxy.exception.list = false
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.timeout = 10000
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.content.limit = 65536
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.agent = nutch-1.15-crawler/Nutch-1.15
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2018-11-17 13:30:42,295 INFO  httpclient.Http - http.enable.cookie.header = true
+2018-11-17 13:30:42,704 INFO  mapreduce.Job - Job job_local1495680352_0001 running in uber mode : false
+2018-11-17 13:30:42,706 INFO  mapreduce.Job -  map 0% reduce 0%
+2018-11-17 13:30:43,143 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=8, fetchQueues.totalSize=24, fetchQueues.getQueueCount=2
+2018-11-17 13:30:44,144 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=24, fetchQueues.getQueueCount=2
+2018-11-17 13:30:45,145 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2018-11-17 13:30:46,147 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2018-11-17 13:30:47,148 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2018-11-17 13:30:48,150 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2018-11-17 13:30:48,485 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/in-en/ (queue crawl delay=5000ms)
+2018-11-17 13:30:48,716 INFO  mapreduce.Job -  map 67% reduce 0%
+2018-11-17 13:30:49,152 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2018-11-17 13:30:50,153 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2018-11-17 13:30:51,155 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2018-11-17 13:30:52,156 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2018-11-17 13:30:53,158 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2018-11-17 13:30:53,981 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/sg-en/ (queue crawl delay=5000ms)
+2018-11-17 13:30:54,160 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2018-11-17 13:30:55,161 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2018-11-17 13:30:56,163 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2018-11-17 13:30:57,164 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2018-11-17 13:30:58,166 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2018-11-17 13:30:59,167 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2018-11-17 13:30:59,624 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/il-en/ (queue crawl delay=5000ms)
+2018-11-17 13:31:00,169 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2018-11-17 13:31:01,170 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2018-11-17 13:31:02,172 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2018-11-17 13:31:03,173 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2018-11-17 13:31:04,175 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2018-11-17 13:31:05,044 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/se-en/ (queue crawl delay=5000ms)
+2018-11-17 13:31:05,176 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2018-11-17 13:31:06,178 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2018-11-17 13:31:07,179 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2018-11-17 13:31:08,181 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2018-11-17 13:31:09,182 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2018-11-17 13:31:10,184 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2018-11-17 13:31:10,554 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/es/ (queue crawl delay=5000ms)
+2018-11-17 13:31:11,185 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2018-11-17 13:31:12,187 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2018-11-17 13:31:13,188 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2018-11-17 13:31:14,190 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2018-11-17 13:31:15,192 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2018-11-17 13:31:16,024 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/#content (queue crawl delay=5000ms)
+2018-11-17 13:31:16,193 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2018-11-17 13:31:17,195 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2018-11-17 13:31:18,196 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2018-11-17 13:31:19,198 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2018-11-17 13:31:20,200 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2018-11-17 13:31:21,202 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2018-11-17 13:31:21,724 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/it/ (queue crawl delay=5000ms)
+2018-11-17 13:31:22,203 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2018-11-17 13:31:23,205 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2018-11-17 13:31:24,206 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2018-11-17 13:31:25,208 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2018-11-17 13:31:26,209 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2018-11-17 13:31:27,211 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2018-11-17 13:31:27,290 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/mx/ (queue crawl delay=5000ms)
+2018-11-17 13:31:28,212 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2018-11-17 13:31:29,214 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2018-11-17 13:31:30,215 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2018-11-17 13:31:31,217 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2018-11-17 13:31:32,219 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2018-11-17 13:31:32,744 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/ca-fr/ (queue crawl delay=5000ms)
+2018-11-17 13:31:33,220 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2018-11-17 13:31:34,222 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2018-11-17 13:31:35,223 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2018-11-17 13:31:36,224 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2018-11-17 13:31:37,226 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2018-11-17 13:31:38,227 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2018-11-17 13:31:38,278 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/pl/ (queue crawl delay=5000ms)
+2018-11-17 13:31:39,228 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2018-11-17 13:31:40,230 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2018-11-17 13:31:41,232 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2018-11-17 13:31:42,233 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2018-11-17 13:31:43,234 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2018-11-17 13:31:43,734 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/fr/ (queue crawl delay=5000ms)
+2018-11-17 13:31:44,236 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2018-11-17 13:31:45,237 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2018-11-17 13:31:46,239 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2018-11-17 13:31:47,240 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2018-11-17 13:31:48,242 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2018-11-17 13:31:49,139 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/no-en/ (queue crawl delay=5000ms)
+2018-11-17 13:31:49,244 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2018-11-17 13:31:50,245 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2018-11-17 13:31:51,246 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2018-11-17 13:31:52,247 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2018-11-17 13:31:53,249 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2018-11-17 13:31:54,250 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2018-11-17 13:31:54,634 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/security/edid/signin-form (queue crawl delay=5000ms)
+2018-11-17 13:31:55,251 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2018-11-17 13:31:56,253 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2018-11-17 13:31:57,254 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2018-11-17 13:31:58,256 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2018-11-17 13:31:59,257 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2018-11-17 13:31:59,765 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.etsy.com/# (queue crawl delay=5000ms)
+2018-11-17 13:32:00,258 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2018-11-17 13:32:01,259 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2018-11-17 13:32:02,260 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2018-11-17 13:32:03,262 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2018-11-17 13:32:04,264 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2018-11-17 13:32:05,210 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/ie/ (queue crawl delay=5000ms)
+2018-11-17 13:32:05,265 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2018-11-17 13:32:06,266 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2018-11-17 13:32:07,268 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2018-11-17 13:32:08,269 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2018-11-17 13:32:09,270 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2018-11-17 13:32:10,272 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2018-11-17 13:32:10,667 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/jp/ (queue crawl delay=5000ms)
+2018-11-17 13:32:11,272 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2018-11-17 13:32:12,273 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2018-11-17 13:32:13,275 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2018-11-17 13:32:14,276 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2018-11-17 13:32:15,277 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2018-11-17 13:32:16,160 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/nz/ (queue crawl delay=5000ms)
+2018-11-17 13:32:16,278 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2018-11-17 13:32:17,279 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2018-11-17 13:32:18,280 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2018-11-17 13:32:19,281 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2018-11-17 13:32:20,282 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2018-11-17 13:32:21,283 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2018-11-17 13:32:21,542 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/dk-en/ (queue crawl delay=5000ms)
+2018-11-17 13:32:22,284 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2018-11-17 13:32:23,286 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2018-11-17 13:32:24,287 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2018-11-17 13:32:25,288 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2018-11-17 13:32:26,289 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2018-11-17 13:32:26,949 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/hk-en/ (queue crawl delay=5000ms)
+2018-11-17 13:32:27,290 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2018-11-17 13:32:28,291 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2018-11-17 13:32:29,292 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2018-11-17 13:32:30,294 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2018-11-17 13:32:31,295 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2018-11-17 13:32:32,296 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2018-11-17 13:32:32,374 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/ca/ (queue crawl delay=5000ms)
+2018-11-17 13:32:33,297 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2018-11-17 13:32:33,298 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:33,298 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:33,298 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:33,298 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:33,299 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:33,299 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483157874
+2018-11-17 13:32:33,299 INFO  fetcher.FetchItemQueue -   now           = 1542483153299
+2018-11-17 13:32:33,299 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/nl/
+2018-11-17 13:32:33,299 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/uk/
+2018-11-17 13:32:33,299 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/osdd.php
+2018-11-17 13:32:33,299 INFO  fetcher.FetchItemQueue -   3. https://www.etsy.com/au/
+2018-11-17 13:32:34,300 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2018-11-17 13:32:34,300 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483157874
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   now           = 1542483154301
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/nl/
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/uk/
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/osdd.php
+2018-11-17 13:32:34,301 INFO  fetcher.FetchItemQueue -   3. https://www.etsy.com/au/
+2018-11-17 13:32:35,302 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483157874
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   now           = 1542483155303
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/nl/
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/uk/
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/osdd.php
+2018-11-17 13:32:35,303 INFO  fetcher.FetchItemQueue -   3. https://www.etsy.com/au/
+2018-11-17 13:32:36,304 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2018-11-17 13:32:36,304 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483157874
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   now           = 1542483156305
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/nl/
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/uk/
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/osdd.php
+2018-11-17 13:32:36,305 INFO  fetcher.FetchItemQueue -   3. https://www.etsy.com/au/
+2018-11-17 13:32:37,306 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483157874
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   now           = 1542483157307
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/nl/
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/uk/
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/osdd.php
+2018-11-17 13:32:37,307 INFO  fetcher.FetchItemQueue -   3. https://www.etsy.com/au/
+2018-11-17 13:32:37,878 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.etsy.com/nl/ (queue crawl delay=5000ms)
+2018-11-17 13:32:38,309 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2018-11-17 13:32:38,309 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:38,309 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:38,309 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:38,309 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:38,309 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:38,309 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483163269
+2018-11-17 13:32:38,309 INFO  fetcher.FetchItemQueue -   now           = 1542483158309
+2018-11-17 13:32:38,310 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/uk/
+2018-11-17 13:32:38,310 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/osdd.php
+2018-11-17 13:32:38,310 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/au/
+2018-11-17 13:32:39,311 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2018-11-17 13:32:39,311 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:39,311 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:39,311 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:39,311 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:39,311 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:39,311 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483163269
+2018-11-17 13:32:39,312 INFO  fetcher.FetchItemQueue -   now           = 1542483159311
+2018-11-17 13:32:39,312 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/uk/
+2018-11-17 13:32:39,312 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/osdd.php
+2018-11-17 13:32:39,312 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/au/
+2018-11-17 13:32:40,313 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2018-11-17 13:32:40,313 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:40,313 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:40,313 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:40,313 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:40,313 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:40,314 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483163269
+2018-11-17 13:32:40,314 INFO  fetcher.FetchItemQueue -   now           = 1542483160314
+2018-11-17 13:32:40,314 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/uk/
+2018-11-17 13:32:40,314 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/osdd.php
+2018-11-17 13:32:40,314 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/au/
+2018-11-17 13:32:41,315 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2018-11-17 13:32:41,315 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:41,315 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:41,315 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:41,315 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:41,315 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:41,315 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483163269
+2018-11-17 13:32:41,316 INFO  fetcher.FetchItemQueue -   now           = 1542483161316
+2018-11-17 13:32:41,316 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/uk/
+2018-11-17 13:32:41,316 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/osdd.php
+2018-11-17 13:32:41,316 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/au/
+2018-11-17 13:32:42,317 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483163269
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   now           = 1542483162317
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/uk/
+2018-11-17 13:32:42,317 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/osdd.php
+2018-11-17 13:32:42,318 INFO  fetcher.FetchItemQueue -   2. https://www.etsy.com/au/
+2018-11-17 13:32:43,269 INFO  fetcher.FetcherThread - FetcherThread 45 fetching https://www.etsy.com/uk/ (queue crawl delay=5000ms)
+2018-11-17 13:32:43,318 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   inProgress    = 1
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483163269
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   now           = 1542483163319
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/osdd.php
+2018-11-17 13:32:43,319 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/au/
+2018-11-17 13:32:44,320 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2018-11-17 13:32:44,320 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:44,320 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:44,320 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:44,320 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:44,320 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:44,320 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483168728
+2018-11-17 13:32:44,320 INFO  fetcher.FetchItemQueue -   now           = 1542483164320
+2018-11-17 13:32:44,321 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/osdd.php
+2018-11-17 13:32:44,321 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/au/
+2018-11-17 13:32:45,322 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483168728
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   now           = 1542483165322
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/osdd.php
+2018-11-17 13:32:45,322 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/au/
+2018-11-17 13:32:46,323 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483168728
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   now           = 1542483166324
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/osdd.php
+2018-11-17 13:32:46,324 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/au/
+2018-11-17 13:32:47,325 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483168728
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   now           = 1542483167326
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/osdd.php
+2018-11-17 13:32:47,326 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/au/
+2018-11-17 13:32:48,327 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2018-11-17 13:32:48,327 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:48,327 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:48,327 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:48,327 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:48,327 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:48,327 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483168728
+2018-11-17 13:32:48,327 INFO  fetcher.FetchItemQueue -   now           = 1542483168327
+2018-11-17 13:32:48,328 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/osdd.php
+2018-11-17 13:32:48,328 INFO  fetcher.FetchItemQueue -   1. https://www.etsy.com/au/
+2018-11-17 13:32:48,732 INFO  fetcher.FetcherThread - FetcherThread 45 fetching https://www.etsy.com/osdd.php (queue crawl delay=5000ms)
+2018-11-17 13:32:49,329 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2018-11-17 13:32:49,329 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:49,329 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:49,330 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:49,330 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:49,330 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:49,330 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483173832
+2018-11-17 13:32:49,330 INFO  fetcher.FetchItemQueue -   now           = 1542483169330
+2018-11-17 13:32:49,330 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/au/
+2018-11-17 13:32:50,331 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2018-11-17 13:32:50,331 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:50,331 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:50,331 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:50,331 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:50,331 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:50,331 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483173832
+2018-11-17 13:32:50,331 INFO  fetcher.FetchItemQueue -   now           = 1542483170331
+2018-11-17 13:32:50,332 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/au/
+2018-11-17 13:32:51,332 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2018-11-17 13:32:51,332 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:51,333 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:51,333 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:51,333 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:51,333 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:51,333 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483173832
+2018-11-17 13:32:51,333 INFO  fetcher.FetchItemQueue -   now           = 1542483171333
+2018-11-17 13:32:51,333 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/au/
+2018-11-17 13:32:52,334 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2018-11-17 13:32:52,334 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:52,334 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:52,334 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:52,334 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:52,334 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:52,334 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483173832
+2018-11-17 13:32:52,334 INFO  fetcher.FetchItemQueue -   now           = 1542483172334
+2018-11-17 13:32:52,335 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/au/
+2018-11-17 13:32:53,335 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueues - * queue: https://www.etsy.com
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1542483173832
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueue -   now           = 1542483173336
+2018-11-17 13:32:53,336 INFO  fetcher.FetchItemQueue -   0. https://www.etsy.com/au/
+2018-11-17 13:32:53,836 INFO  fetcher.FetcherThread - FetcherThread 45 fetching https://www.etsy.com/au/ (queue crawl delay=5000ms)
+2018-11-17 13:32:54,082 INFO  fetcher.FetcherThread - FetcherThread 42 has no more work available
+2018-11-17 13:32:54,082 INFO  fetcher.FetcherThread - FetcherThread 42 -finishing thread FetcherThread, activeThreads=9
+2018-11-17 13:32:54,206 INFO  fetcher.FetcherThread - FetcherThread 46 has no more work available
+2018-11-17 13:32:54,206 INFO  fetcher.FetcherThread - FetcherThread 47 has no more work available
+2018-11-17 13:32:54,207 INFO  fetcher.FetcherThread - FetcherThread 46 -finishing thread FetcherThread, activeThreads=8
+2018-11-17 13:32:54,207 INFO  fetcher.FetcherThread - FetcherThread 47 -finishing thread FetcherThread, activeThreads=7
+2018-11-17 13:32:54,217 INFO  fetcher.FetcherThread - FetcherThread 48 has no more work available
+2018-11-17 13:32:54,217 INFO  fetcher.FetcherThread - FetcherThread 49 has no more work available
+2018-11-17 13:32:54,217 INFO  fetcher.FetcherThread - FetcherThread 48 -finishing thread FetcherThread, activeThreads=6
+2018-11-17 13:32:54,217 INFO  fetcher.FetcherThread - FetcherThread 49 -finishing thread FetcherThread, activeThreads=5
+2018-11-17 13:32:54,225 INFO  fetcher.FetcherThread - FetcherThread 50 has no more work available
+2018-11-17 13:32:54,225 INFO  fetcher.FetcherThread - FetcherThread 50 -finishing thread FetcherThread, activeThreads=4
+2018-11-17 13:32:54,229 INFO  fetcher.FetcherThread - FetcherThread 51 has no more work available
+2018-11-17 13:32:54,230 INFO  fetcher.FetcherThread - FetcherThread 51 -finishing thread FetcherThread, activeThreads=3
+2018-11-17 13:32:54,243 INFO  fetcher.FetcherThread - FetcherThread 44 has no more work available
+2018-11-17 13:32:54,244 INFO  fetcher.FetcherThread - FetcherThread 44 -finishing thread FetcherThread, activeThreads=2
+2018-11-17 13:32:54,281 INFO  fetcher.FetcherThread - FetcherThread 43 has no more work available
+2018-11-17 13:32:54,281 INFO  fetcher.FetcherThread - FetcherThread 43 -finishing thread FetcherThread, activeThreads=1
+2018-11-17 13:32:54,337 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=1
+2018-11-17 13:32:54,403 INFO  fetcher.FetcherThread - FetcherThread 45 has no more work available
+2018-11-17 13:32:54,403 INFO  fetcher.FetcherThread - FetcherThread 45 -finishing thread FetcherThread, activeThreads=0
+2018-11-17 13:32:55,338 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=0
+2018-11-17 13:32:55,338 INFO  fetcher.Fetcher - -activeThreads=0
+2018-11-17 13:32:55,873 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:32:55,873 INFO  mapreduce.Job - Job job_local1495680352_0001 completed successfully
+2018-11-17 13:32:55,922 INFO  mapreduce.Job - Counters: 33
+	File System Counters
+		FILE: Number of bytes read=4986488
+		FILE: Number of bytes written=7637523
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=28
+		Map output records=55
+		Map output bytes=1568945
+		Map output materialized bytes=1569165
+		Input split bytes=173
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=28
+		Reduce shuffle bytes=1569165
+		Reduce input records=55
+		Reduce output records=55
+		Spilled Records=110
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=108
+		Total committed heap usage (bytes)=639631360
+	FetcherStatus
+		bytes_downloaded=1507792
+		robots_denied=1
+		success=27
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2526
+	File Output Format Counters 
+		Bytes Written=322090
+2018-11-17 13:32:55,922 INFO  fetcher.Fetcher - Fetcher: finished at 2018-11-17 13:32:55, elapsed: 00:02:15
+2018-11-17 13:34:31,483 INFO  fetcher.Fetcher - Fetcher: starting at 2018-11-17 13:34:31
+2018-11-17 13:34:31,483 INFO  fetcher.Fetcher - Fetcher: segment: crawl/segments/20181117133008
+2018-11-17 13:34:31,689 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:34:31,935 ERROR fetcher.Fetcher - Fetcher: java.io.IOException: Segment already fetched!
+	at org.apache.nutch.fetcher.FetcherOutputFormat.checkOutputSpecs(FetcherOutputFormat.java:56)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:266)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:139)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at org.apache.nutch.fetcher.Fetcher.fetch(Fetcher.java:497)
+	at org.apache.nutch.fetcher.Fetcher.run(Fetcher.java:543)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.fetcher.Fetcher.main(Fetcher.java:517)
+
+2018-11-17 13:34:40,819 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 13:34:41,092 INFO  parse.ParseSegment - ParseSegment: starting at 2018-11-17 13:34:41
+2018-11-17 13:34:41,092 INFO  parse.ParseSegment - ParseSegment: segment: crawl/segments/20181117133008
+2018-11-17 13:34:41,701 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 13:34:41,702 INFO  mapreduce.Job - Running job: job_local2040089672_0001
+2018-11-17 13:34:42,164 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2018-11-17 13:34:42,165 INFO  parse.ParseSegment - Parsed (86ms):https://omniture-ssl.walmart.com
+2018-11-17 13:34:42,168 INFO  parse.ParseSegment - Parsed (2ms):https://omniture.walmart.com
+2018-11-17 13:34:42,271 INFO  parse.ParseSegment - Parsed (102ms):https://www.etsy.com/#
+2018-11-17 13:34:42,326 INFO  parse.ParseSegment - Parsed (52ms):https://www.etsy.com/#content
+2018-11-17 13:34:42,360 INFO  parse.ParseSegment - Parsed (32ms):https://www.etsy.com/au/
+2018-11-17 13:34:42,388 INFO  parse.ParseSegment - Parsed (26ms):https://www.etsy.com/ca-fr/
+2018-11-17 13:34:42,416 INFO  parse.ParseSegment - Parsed (26ms):https://www.etsy.com/ca/
+2018-11-17 13:34:42,446 INFO  parse.ParseSegment - Parsed (28ms):https://www.etsy.com/de/
+2018-11-17 13:34:42,474 INFO  parse.ParseSegment - Parsed (26ms):https://www.etsy.com/dk-en/
+2018-11-17 13:34:42,500 INFO  parse.ParseSegment - Parsed (25ms):https://www.etsy.com/es/
+2018-11-17 13:34:42,529 INFO  parse.ParseSegment - Parsed (27ms):https://www.etsy.com/fr/
+2018-11-17 13:34:42,556 INFO  parse.ParseSegment - Parsed (25ms):https://www.etsy.com/hk-en/
+2018-11-17 13:34:42,573 INFO  parse.ParseSegment - Parsed (16ms):https://www.etsy.com/ie/
+2018-11-17 13:34:42,596 INFO  parse.ParseSegment - Parsed (22ms):https://www.etsy.com/il-en/
+2018-11-17 13:34:42,619 INFO  parse.ParseSegment - Parsed (22ms):https://www.etsy.com/in-en/
+2018-11-17 13:34:42,634 INFO  parse.ParseSegment - Parsed (13ms):https://www.etsy.com/it/
+2018-11-17 13:34:42,658 INFO  parse.ParseSegment - Parsed (23ms):https://www.etsy.com/jp/
+2018-11-17 13:34:42,685 INFO  parse.ParseSegment - Parsed (26ms):https://www.etsy.com/mx/
+2018-11-17 13:34:42,705 INFO  mapreduce.Job - Job job_local2040089672_0001 running in uber mode : false
+2018-11-17 13:34:42,706 INFO  parse.ParseSegment - Parsed (20ms):https://www.etsy.com/nl/
+2018-11-17 13:34:42,708 INFO  mapreduce.Job -  map 0% reduce 0%
+2018-11-17 13:34:42,721 INFO  parse.ParseSegment - Parsed (13ms):https://www.etsy.com/no-en/
+2018-11-17 13:34:42,745 INFO  parse.ParseSegment - Parsed (22ms):https://www.etsy.com/nz/
+2018-11-17 13:34:42,746 INFO  parse.ParserFactory - The parsing plugins: [org.apache.nutch.parse.tika.TikaParser] are enabled via the plugin.includes system property, and all claim to support the content type application/xml, but they are not mapped to it  in the parse-plugins.xml file
+2018-11-17 13:34:44,890 INFO  parse.ParseSegment - Parsed (2144ms):https://www.etsy.com/osdd.php
+2018-11-17 13:34:44,906 INFO  parse.ParseSegment - Parsed (15ms):https://www.etsy.com/pl/
+2018-11-17 13:34:44,918 INFO  parse.ParseSegment - Parsed (11ms):https://www.etsy.com/se-en/
+2018-11-17 13:34:44,921 INFO  parse.ParseSegment - Parsed (2ms):https://www.etsy.com/security/edid/signin-form
+2018-11-17 13:34:44,939 INFO  parse.ParseSegment - Parsed (17ms):https://www.etsy.com/sg-en/
+2018-11-17 13:34:44,951 INFO  parse.ParseSegment - Parsed (11ms):https://www.etsy.com/uk/
+2018-11-17 13:34:45,082 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2018-11-17 13:34:45,713 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 13:34:45,714 INFO  mapreduce.Job - Job job_local2040089672_0001 completed successfully
+2018-11-17 13:34:45,772 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=2985942
+		FILE: Number of bytes written=3500979
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=27
+		Map output records=27
+		Map output bytes=255274
+		Map output materialized bytes=255388
+		Input split bytes=171
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=27
+		Reduce shuffle bytes=255388
+		Reduce input records=27
+		Reduce output records=27
+		Spilled Records=54
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=180
+		Total committed heap usage (bytes)=644874240
+	ParserStatus
+		success=27
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=316031
+	File Output Format Counters 
+		Bytes Written=0
+2018-11-17 13:34:45,775 INFO  parse.ParseSegment - ParseSegment: finished at 2018-11-17 13:34:45, elapsed: 00:00:04
+2018-11-17 14:57:52,785 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-17 14:57:53,070 INFO  crawl.Generator - Generator: starting at 2018-11-17 14:57:53
+2018-11-17 14:57:53,070 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2018-11-17 14:57:53,070 INFO  crawl.Generator - Generator: filtering: true
+2018-11-17 14:57:53,070 INFO  crawl.Generator - Generator: normalizing: true
+2018-11-17 14:57:53,071 INFO  crawl.Generator - Generator: topN: 200
+2018-11-17 14:57:53,078 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2018-11-17 14:57:53,667 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 14:57:53,668 INFO  mapreduce.Job - Running job: job_local976651817_0001
+2018-11-17 14:57:54,002 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2018-11-17 14:57:54,002 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2018-11-17 14:57:54,002 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2018-11-17 14:57:54,670 INFO  mapreduce.Job - Job job_local976651817_0001 running in uber mode : false
+2018-11-17 14:57:54,674 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 14:57:54,677 INFO  mapreduce.Job - Job job_local976651817_0001 completed successfully
+2018-11-17 14:57:54,723 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1852712
+		FILE: Number of bytes written=2631596
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=30
+		Map output records=28
+		Map output bytes=2392
+		Map output materialized bytes=2454
+		Input split bytes=155
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=2454
+		Reduce input records=28
+		Reduce output records=28
+		Spilled Records=56
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=11
+		Total committed heap usage (bytes)=648019968
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2367
+	File Output Format Counters 
+		Bytes Written=8904
+2018-11-17 14:57:54,725 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2018-11-17 14:57:55,725 INFO  crawl.Generator - Generator: segment: crawl/segments/20181117145755
+2018-11-17 14:57:55,904 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-11-17 14:57:55,905 INFO  mapreduce.Job - Running job: job_local661361398_0002
+2018-11-17 14:57:56,905 INFO  mapreduce.Job - Job job_local661361398_0002 running in uber mode : false
+2018-11-17 14:57:56,906 INFO  mapreduce.Job -  map 100% reduce 100%
+2018-11-17 14:57:56,908 INFO  mapreduce.Job - Job job_local661361398_0002 completed successfully
+2018-11-17 14:57:56,912 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3712566
+		FILE: Number of bytes written=5266056
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=28
+		Map output records=28
+		Map output bytes=3048
+		Map output materialized bytes=3110
+		Input split bytes=191
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=28
+		Reduce shuffle bytes=3110
+		Reduce input records=28
+		Reduce output records=28
+		Spilled Records=56
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=858783744
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2776
+	File Output Format Counters 
+		Bytes Written=2526
+2018-11-17 14:57:56,915 INFO  crawl.Generator - Generator: finished at 2018-11-17 14:57:56, elapsed: 00:00:03

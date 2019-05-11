@@ -1,0 +1,114 @@
+2019-04-29 17:09:25,405 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-04-29 17:09:25,451 INFO  crawl.CrawlDbReader - CrawlDb topN: starting (topN=20000, min=0.0)
+2019-04-29 17:09:25,451 INFO  crawl.CrawlDbReader - CrawlDb db: crawl/crawldb
+2019-04-29 17:09:26,157 ERROR crawl.CrawlDbReader - org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/Users/harshverma/Downloads/IR_Final/IR/crawling/Clustering/crawl/crawldb/current
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:323)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:265)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat.listStatus(SequenceFileInputFormat.java:59)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:387)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:301)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:318)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:196)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at org.apache.nutch.crawl.CrawlDbReader.processTopNJob(CrawlDbReader.java:811)
+	at org.apache.nutch.crawl.CrawlDbReader.run(CrawlDbReader.java:966)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.CrawlDbReader.main(CrawlDbReader.java:983)
+
+2019-04-29 17:09:37,912 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-04-29 17:09:37,931 INFO  crawl.CrawlDbReader - CrawlDb topN: starting (topN=20000, min=0.0)
+2019-04-29 17:09:37,931 INFO  crawl.CrawlDbReader - CrawlDb db: crawl/crawldb
+2019-04-29 17:09:38,528 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-04-29 17:09:38,528 INFO  mapreduce.Job - Running job: job_local452767545_0001
+2019-04-29 17:09:39,535 INFO  mapreduce.Job - Job job_local452767545_0001 running in uber mode : false
+2019-04-29 17:09:39,536 INFO  mapreduce.Job -  map 0% reduce 0%
+2019-04-29 17:09:40,750 INFO  mapreduce.Job -  map 100% reduce 0%
+2019-04-29 17:09:44,765 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-04-29 17:09:44,766 INFO  mapreduce.Job - Job job_local452767545_0001 completed successfully
+2019-04-29 17:09:44,787 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=870384704
+		FILE: Number of bytes written=632316612
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1056051
+		Map output records=1056051
+		Map output bytes=99972546
+		Map output materialized bytes=102275552
+		Input split bytes=880
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=177803
+		Reduce shuffle bytes=102275552
+		Reduce input records=1056051
+		Reduce output records=1056051
+		Spilled Records=2112102
+		Shuffled Maps =5
+		Failed Shuffles=0
+		Merged Map outputs=5
+		GC time elapsed (ms)=223
+		Total committed heap usage (bytes)=3240624128
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=160990027
+	File Output Format Counters 
+		Bytes Written=110326797
+2019-04-29 17:09:44,787 INFO  crawl.CrawlDbReader - CrawlDb topN: collecting topN scores.
+2019-04-29 17:09:44,970 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-04-29 17:09:44,970 INFO  mapreduce.Job - Running job: job_local267540874_0002
+2019-04-29 17:09:45,971 INFO  mapreduce.Job - Job job_local267540874_0002 running in uber mode : false
+2019-04-29 17:09:45,971 INFO  mapreduce.Job -  map 25% reduce 0%
+2019-04-29 17:09:46,976 INFO  mapreduce.Job -  map 100% reduce 0%
+2019-04-29 17:09:48,982 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-04-29 17:09:48,982 INFO  mapreduce.Job - Job job_local267540874_0002 completed successfully
+2019-04-29 17:09:48,989 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=2465243474
+		FILE: Number of bytes written=2084165183
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1056051
+		Map output records=1056051
+		Map output bytes=99972546
+		Map output materialized bytes=102275546
+		Input split bytes=576
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=177803
+		Reduce shuffle bytes=102275546
+		Reduce input records=1056051
+		Reduce output records=20000
+		Spilled Records=2112102
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=3326607360
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=110375941
+	File Output Format Counters 
+		Bytes Written=1782150
+2019-04-29 17:09:48,998 INFO  crawl.CrawlDbReader - CrawlDb topN: done

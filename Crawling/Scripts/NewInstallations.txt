@@ -1,0 +1,110 @@
+Apache Nutch :
+
+wget http://www-eu.apache.org/dist/nutch/1.15/apache-nutch-1.15-src.tar.gz 
+tar xvfz apache-nutch-1.15-src.tar.gz 
+cd apache-nutch-1.15/
+SET NUTCH_HOME, NUTCH_JAVA_HOME, NUTCH_RUNTIME_HOME
+install ant By sudo apt-get install ant
+ant runtime //build nutch
+
+Update your  : conf/nutch-site.xml with following:
+<configuration>
+<property>
+     <name>http.agent.name</name>
+     <value>nutch-1.15-crawler</value>
+ </property>
+ <property>
+    <name>storage.data.store.class</name>
+    <value>org.apache.gora.mongodb.store.MongoStore</value>
+    <description>Default class for storing data</description>
+</property>
+ <property>
+    <name>plugin.includes</name>
+    <value>protocol-httpclient|urlfilter-regex|index-(basic|more)|query-(basic|site|url|lang)|indexer-solr|nutch-extensionpoints|protocol-httpclient|urlfilter-regex|parse-(text|html|msexcel|msword|mspowerpoint|pdf)|summary-basic|scoring-opic|urlnormalizer-(pass|regex|basic)protocol-http|urlfilter-regex|parse-(html|tika|metatags)|index-(basic|anchor|more|metadata)</value>
+ </property>
+<property>
+ <name>db.ignore.external.links</name>
+ <value>true</value>
+</property>
+<property>
+ <name>db.ignore.external.links.mode</name>
+ <value>byDomain</value>
+</property>
+<property>
+  <name>fetcher.server.delay</name>
+  <value>5.0</value>
+  <description>The number of seconds the fetcher will delay between
+   successive requests to the same server.</description>
+</property>
+
+</configuration>
+
+
+create seeds file in urls folder:
+mkdir -p urls
+$NUTCH_RUNTIME_HOME/bin/nutch inject crawl/crawldb urls
+$NUTCH_RUNTIME_HOME/bin/nutch generate crawl/crawldb crawl/segments -topN 30
+s1=`ls -d crawl/segments/2* | tail -1`
+echo $s1
+$NUTCH_RUNTIME_HOME/bin/nutch fetch $s1
+$NUTCH_RUNTIME_HOME/bin/nutch parse $s1
+$NUTCH_RUNTIME_HOME/bin/nutch updatedb crawl/crawldb $s1
+$NUTCH_RUNTIME_HOME/bin/nutch invertlinks crawl/linkdb -dir crawl/segments
+$NUTCH_RUNTIME_HOME/bin/nutch readdb crawl/crawldb/ -dump myDump
+
+to index in solr: 
+install solr:
+download zip from https://archive.apache.org/dist/lucene/solr/7.3.1/
+unzip 
+cd solr-7.3.1
+set APACHE_SOLR_HOME
+mkdir -p ${APACHE_SOLR_HOME}/server/solr/configsets/nutch/
+cp -r ${APACHE_SOLR_HOME}/server/solr/configsets/_default/* ${APACHE_SOLR_HOME}/server/solr/configsets/nutch/
+cp ${NUTCH_RUNTIME_HOME}/conf/schema.xml ${APACHE_SOLR_HOME}/server/solr/configsets/nutch/conf/
+rm ${APACHE_SOLR_HOME}/server/solr/configsets/nutch/conf/managed-schema
+${APACHE_SOLR_HOME}/bin/solr start
+copy indexwritter vim conf/index-writers.xml from https://wiki.apache.org/nutch/IndexWriterss
+$APACHE_SOLR_HOME/bin/solr delete -c nutch
+$APACHE_SOLR_HOME/bin/solr restart
+update /home/ravikiran/SHARAYU/InformationRetrival/PROJECT/solr-7.3.1/server/solr/configsets/nutch/conf/schema.xml with my 
+
+https://wiki.apache.org/nutch/NutchTutorialc
+
+
+# Indexing
+
+bin/nutch index crawl/crawldb/ -linkdb crawl/linkdb/ crawl/segments/20131108063838/ -filter -normalize -deleteGone
+
+
+# Start selenium server
+DISPLAY=:11 xvfb-run java -jar selenium-server-standalone-2.42.2.jar
+//  if doesnt work check logs of solr
+/// home/ravikiran/SHARAYU/InformationRetrival/PROJECT/solr-7.3.1/server/logs
+
+and add dynamic field schema of description multivalued and keywords multivalued in schema of nutch using UI
+
+
+Solr: link :
+http://localhost:8983/solr/#/nutch/query
+
+
+Nutch UI:
+
+$NUTCH_RUNTIME_HOME/bin/nutch webapp
+open localhost:8080
+
+
+NutCH 1.X Documentation for Report: 
+https://events.static.linuxfound.org/sites/events/files/slides/aceu2014-snagel-web-crawling-nutch.pdf
+
+
+# To find a process running
+ps aux | grep solr
+
+# To kill the process during process id
+kill -9 12198 
+
+
+#start solr
+./bin/solr start
+

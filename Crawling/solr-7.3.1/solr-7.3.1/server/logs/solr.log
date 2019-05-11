@@ -1,0 +1,1472 @@
+2019-04-29 21:08:19.958 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-04-29 21:08:20.241 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.3.1
+2019-04-29 21:08:20.241 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-04-29 21:08:20.241 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1
+2019-04-29 21:08:20.260 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-04-29T21:08:20.242Z
+2019-04-29 21:08:20.260 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2019-04-29 21:08:20.286 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr
+2019-04-29 21:08:20.293 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr/solr.xml
+2019-04-29 21:08:21.096 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr
+2019-04-29 21:08:21.096 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [nutch]
+2019-04-29 21:08:21.100 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-04-29 21:08:21.147 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 57 libs to classloader, from paths: [/Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/contrib/clustering/lib, /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/contrib/extraction/lib, /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/contrib/langid/lib, /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/contrib/velocity/lib, /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/dist]
+2019-04-29 21:08:21.182 INFO  (main) [   ] o.e.j.s.Server Started @1786ms
+2019-04-29 21:08:21.398 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.3.1
+2019-04-29 21:08:21.489 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2019-04-29 21:08:21.526 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.529 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.530 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.534 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.538 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.540 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.574 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.581 WARN  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2019-04-29 21:08:21.672 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-04-29 21:08:21.681 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr/nutch, trusted=true
+2019-04-29 21:08:21.736 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2019-04-29 21:08:21.744 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr/nutch], dataDir=[/Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr/nutch/data/]
+2019-04-29 21:08:21.776 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-29 21:08:22.086 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-29 21:08:22.086 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-29 21:08:22.092 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2019-04-29 21:08:22.092 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-29 21:08:22.192 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@694cbb3f[nutch] main]
+2019-04-29 21:08:22.201 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr/nutch/conf
+2019-04-29 21:08:22.218 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-29 21:08:22.222 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-29 21:08:22.230 INFO  (coreLoadExecutor-6-thread-1) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-29 21:08:22.308 INFO  (searcherExecutor-7-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@694cbb3f[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_v(7.3.1):C117330)))}
+2019-04-29 21:08:22.308 INFO  (searcherExecutor-7-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-29 21:08:22.308 INFO  (searcherExecutor-7-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-29 21:08:22.311 INFO  (searcherExecutor-7-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@694cbb3f[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_v(7.3.1):C117330)))}
+2019-04-29 21:19:37.701 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:rahul%2520dravid&indent=true&rows=15&wt=json} hits=7953 status=0 QTime=126
+2019-04-29 21:19:59.277 INFO  (qtp142666848-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:rahul%2520dravid&indent=true&rows=100&wt=json} hits=7953 status=0 QTime=3
+2019-04-29 21:20:05.029 INFO  (qtp142666848-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:rahul%2520dravid&indent=true&rows=15&wt=json} hits=7953 status=0 QTime=0
+2019-04-29 21:20:11.787 INFO  (qtp142666848-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:dravid%2520rahul%2520get%2520legend%2520lokesh%2520miss&indent=true&rows=15&wt=json} hits=6241 status=0 QTime=11
+2019-04-29 21:20:24.762 INFO  (qtp142666848-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:rahul%2520dravid&indent=true&rows=100&wt=json} hits=7953 status=0 QTime=0
+2019-04-29 21:21:31.085 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:who%2520is%2520best%2520player%2520in%2520cricket&indent=true&rows=15&wt=json} hits=30851 status=0 QTime=13
+2019-04-29 21:21:46.094 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:who%2520is%2520best%2520player%2520in%2520cricket&indent=true&rows=100&wt=json} hits=30851 status=0 QTime=6
+2019-04-29 21:22:06.745 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:icc%2520World%2520Cup&indent=true&rows=15&wt=json} hits=67515 status=0 QTime=7
+2019-04-29 21:22:44.068 INFO  (qtp142666848-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:icc%2520World%2520Cup&indent=true&rows=100&wt=json} hits=67515 status=0 QTime=4
+2019-04-29 21:25:15.423 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:icc%2520cricket%2520world%2520cup&indent=true&rows=15&wt=json} hits=67515 status=0 QTime=3
+2019-04-29 21:28:49.227 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:icc%2520cricket%2520world%2520cup&indent=true&rows=50&wt=json} hits=67515 status=0 QTime=3
+2019-04-29 21:29:08.088 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:icc%2520cricket%2520world%2520cup&indent=true&rows=100&wt=json} hits=67515 status=0 QTime=4
+2019-04-29 21:29:31.059 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:world%2520cup&indent=true&rows=50&wt=json} hits=72968 status=0 QTime=6
+2019-04-29 21:29:41.546 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520world%2520cup&indent=true&rows=50&wt=json} hits=77728 status=0 QTime=5
+2019-04-29 21:29:44.641 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520world%2520cup&indent=true&rows=100&wt=json} hits=77728 status=0 QTime=3
+2019-04-29 21:31:51.578 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:rahul%2520dravid&indent=true&rows=50&wt=json} hits=7953 status=0 QTime=0
+2019-04-29 21:31:53.628 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:rahul%2520dravid&indent=true&rows=100&wt=json} hits=7953 status=0 QTime=1
+2019-04-29 21:32:36.375 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:mens%2520World%2520Cup%2520&indent=true&rows=50&wt=json} hits=41078 status=0 QTime=8
+2019-04-29 21:33:17.957 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:virat%2520kohli&indent=true&rows=50&wt=json} hits=7670 status=0 QTime=4
+2019-04-29 21:33:23.509 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:virat%2520kohli&indent=true&rows=100&wt=json} hits=7670 status=0 QTime=4
+2019-04-29 21:34:47.817 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:virat%2520kohli&indent=true&rows=50&wt=json} hits=7670 status=0 QTime=0
+2019-04-29 21:34:55.142 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:Virat%2520Kohli&indent=true&rows=100&wt=json} hits=7670 status=0 QTime=0
+2019-04-29 21:35:18.421 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520world%2520cup&indent=true&rows=50&wt=json} hits=77728 status=0 QTime=10
+2019-04-29 21:35:26.294 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520world%2520cup&indent=true&rows=100&wt=json} hits=77728 status=0 QTime=0
+2019-04-29 21:35:49.440 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:Ipl%25202019&indent=true&rows=50&wt=json} hits=71221 status=0 QTime=7
+2019-04-29 21:35:58.529 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:Ipl%25202019&indent=true&rows=100&wt=json} hits=71221 status=0 QTime=3
+2019-04-29 21:36:32.573 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:IPL%25202019&indent=true&rows=50&wt=json} hits=71221 status=0 QTime=0
+2019-04-29 21:36:36.794 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:IPL%25202019&indent=true&rows=100&wt=json} hits=71221 status=0 QTime=2
+2019-04-29 21:36:37.731 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:IPL%25202019&indent=true&rows=100&wt=json} hits=71221 status=0 QTime=0
+2019-04-29 21:36:39.082 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:IPL%25202019&indent=true&rows=15&wt=json} hits=71221 status=0 QTime=0
+2019-04-29 21:36:49.451 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:match%2520vivo%2520ipl&indent=true&rows=15&wt=json} hits=58707 status=0 QTime=3
+2019-04-29 21:38:08.930 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:who%2520is%2520best%2520cricket%2520player&indent=true&rows=50&wt=json} hits=30847 status=0 QTime=3
+2019-04-29 21:38:52.039 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:who%2520is%2520best%2520cricket%2520player&indent=true&rows=100&wt=json} hits=30847 status=0 QTime=6
+2019-04-29 21:39:06.739 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:who%2520is%2520best%2520cricket%2520player%2520in%25202019&indent=true&rows=50&wt=json} hits=30851 status=0 QTime=3
+2019-04-29 21:39:20.479 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:crick%2520buzz%2520latest%2520scores&indent=true&rows=50&wt=json} hits=105 status=0 QTime=2
+2019-04-29 21:39:30.701 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:crick%2520buzz%2520latest%2520scores&indent=true&rows=100&wt=json} hits=105 status=0 QTime=1
+2019-04-29 21:40:12.333 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:Player%2520of%25202019%2520cricket&indent=true&rows=50&wt=json} hits=21601 status=0 QTime=4
+2019-04-29 21:40:36.341 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:History%2520of%2520cricket&indent=true&rows=50&wt=json} hits=24099 status=0 QTime=5
+2019-04-29 21:41:02.282 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:History%2520of%2520cricket&indent=true&rows=100&wt=json} hits=24099 status=0 QTime=4
+2019-04-29 21:42:08.287 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:latest%2520cricket%2520match%2520scores&indent=true&rows=50&wt=json} hits=33265 status=0 QTime=3
+2019-04-29 21:42:26.436 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:latest%2520cricket%2520match&indent=true&rows=50&wt=json} hits=33265 status=0 QTime=2
+2019-04-29 21:42:30.963 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:latest%2520cricket%2520match&indent=true&rows=100&wt=json} hits=33265 status=0 QTime=2
+2019-04-29 21:42:40.953 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:latest%2520cricket%2520match%25202019&indent=true&rows=50&wt=json} hits=33265 status=0 QTime=1
+2019-04-29 21:42:53.171 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:2019%2520cricket%2520match&indent=true&rows=50&wt=json} hits=93130 status=0 QTime=3
+2019-04-29 21:43:18.721 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:Indian%2520cricket%2520captian&indent=true&rows=50&wt=json} hits=65452 status=0 QTime=2
+2019-04-29 21:43:56.778 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:who%2520is%2520current%2520Indian%2520captain&indent=true&rows=50&wt=json} hits=30847 status=0 QTime=1
+2019-04-29 21:44:13.176 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:current%2520Indian%2520cricket%2520team%2520captian&indent=true&rows=50&wt=json} hits=13207 status=0 QTime=2
+2019-04-29 21:45:25.141 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:2019%2520cricket%2520match&indent=true&rows=50&wt=json} hits=93130 status=0 QTime=1
+2019-04-29 21:45:32.822 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:2019%2520cricket%2520match&indent=true&rows=100&wt=json} hits=93130 status=0 QTime=2
+2019-04-29 21:45:52.533 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:current%2520cricket%2520match&indent=true&rows=50&wt=json} hits=13207 status=0 QTime=0
+2019-04-29 21:46:24.876 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520tounaments&indent=true&rows=50&wt=json} hits=77727 status=0 QTime=2
+2019-04-29 21:47:03.131 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:royal%2520challengers&indent=true&rows=50&wt=json} hits=18334 status=0 QTime=5
+2019-04-29 21:47:34.722 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:Chennai%2520kings&indent=true&rows=50&wt=json} hits=14650 status=0 QTime=1
+2019-04-29 21:47:42.805 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:CSK&indent=true&rows=50&wt=json} hits=9583 status=0 QTime=3
+2019-04-29 21:48:14.613 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520images&indent=true&rows=50&wt=json} hits=77727 status=0 QTime=1
+2019-04-29 21:48:30.639 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520news&indent=true&rows=50&wt=json} hits=77727 status=0 QTime=3
+2019-04-29 21:48:47.419 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520betting&indent=true&rows=50&wt=json} hits=77727 status=0 QTime=2
+2019-04-29 21:49:19.728 INFO  (qtp142666848-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:women%2520cricket&indent=true&rows=50&wt=json} hits=19805 status=0 QTime=3
+2019-04-29 21:49:49.136 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520in%2520america&indent=true&rows=50&wt=json} hits=77733 status=0 QTime=2
+2019-04-29 21:50:01.944 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520in%2520america&indent=true&rows=100&wt=json} hits=77733 status=0 QTime=3
+2019-04-29 21:50:16.460 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%2520wiki&indent=true&rows=50&wt=json} hits=77727 status=0 QTime=2
+2019-04-29 21:51:00.686 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:crickbuzz%2520latest%2520scores%2520&indent=true&rows=50&wt=json} hits=40801 status=0 QTime=2
+2019-04-29 21:51:33.866 INFO  (qtp142666848-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556574693670} status=0 QTime=7
+2019-04-29 21:51:33.883 INFO  (qtp142666848-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1556574693670} status=0 QTime=20
+2019-04-29 21:51:33.916 INFO  (qtp142666848-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556574693671} status=0 QTime=57
+2019-04-29 21:51:33.940 INFO  (qtp142666848-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556574693670} status=0 QTime=0
+2019-04-29 21:51:33.944 INFO  (qtp142666848-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1556574693670} status=0 QTime=1
+2019-04-29 21:51:33.963 INFO  (qtp142666848-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556574693671} status=0 QTime=20
+2019-04-29 21:51:37.085 INFO  (qtp142666848-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556574693670} status=0 QTime=0
+2019-04-29 21:51:37.094 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1556574697077} status=0 QTime=3
+2019-04-29 21:51:37.104 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1556574697077} status=0 QTime=9
+2019-04-29 21:51:37.108 INFO  (qtp142666848-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556574693671} status=0 QTime=20
+2019-04-29 21:51:37.114 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1556574693671&ts=1556574693671} status=503 QTime=9
+2019-04-29 21:51:37.124 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1556574697077} status=0 QTime=26
+2019-04-29 21:51:38.646 INFO  (qtp142666848-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556574693670} status=0 QTime=0
+2019-04-29 21:51:38.665 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1556574697077} status=0 QTime=14
+2019-04-29 21:51:38.668 INFO  (qtp142666848-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556574693671} status=0 QTime=20
+2019-04-29 21:51:39.991 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1556574693671&ts=1556574693671} hits=117330 status=0 QTime=8
+2019-04-29 21:51:39.991 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1556574693671&ts=1556574693671} status=0 QTime=8
+2019-04-29 21:51:40.441 INFO  (qtp142666848-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556574693670} status=0 QTime=0
+2019-04-29 21:51:40.463 INFO  (qtp142666848-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556574693671} status=0 QTime=21
+2019-04-29 21:51:40.510 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1556574700437} status=0 QTime=64
+2019-04-29 21:51:40.967 INFO  (qtp142666848-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556574693670} status=0 QTime=0
+2019-04-29 21:51:40.990 INFO  (qtp142666848-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556574693671} status=0 QTime=22
+2019-04-29 21:51:43.799 INFO  (qtp142666848-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1556574700941} hits=117330 status=0 QTime=0
+2019-04-29 21:55:11.867 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world%2520cup&indent=true&rows=50&wt=json} hits=37021 status=0 QTime=40
+2019-04-29 21:55:16.431 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world%2520cup&indent=true&rows=100&wt=json} hits=37021 status=0 QTime=9
+2019-04-29 21:55:33.709 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world%2520cup&indent=true&rows=100&wt=json} hits=37021 status=0 QTime=1
+2019-04-29 21:55:43.780 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:rahul%2520dravid&indent=true&rows=50&wt=json} hits=8687 status=0 QTime=4
+2019-04-29 21:55:45.753 INFO  (qtp142666848-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:rahul%2520dravid&indent=true&rows=100&wt=json} hits=8687 status=0 QTime=4
+2019-04-29 21:55:54.697 INFO  (qtp142666848-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world%2520cup&indent=true&rows=50&wt=json} hits=37021 status=0 QTime=0
+2019-04-29 21:56:07.011 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world%2520cup&indent=true&rows=100&wt=json} hits=37021 status=0 QTime=0
+2019-04-29 21:56:14.803 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:2019%2520cricket%2520match&indent=true&rows=50&wt=json} hits=42053 status=0 QTime=6
+2019-04-29 21:56:34.310 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:2019%2520cricket%2520match&indent=true&rows=100&wt=json} hits=42053 status=0 QTime=4
+2019-04-29 21:56:56.760 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:2019%2520cricket%2520match&indent=true&rows=100&wt=json} hits=42053 status=0 QTime=0
+2019-04-29 21:59:00.561 INFO  (qtp142666848-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520match%25202019&indent=true&rows=50&wt=json} hits=41194 status=0 QTime=7
+2019-04-29 22:00:10.260 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world%2520cup&indent=true&rows=100&wt=json} hits=37021 status=0 QTime=0
+2019-04-29 22:00:28.173 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:royal%2520challengers&indent=true&rows=100&wt=json} hits=8710 status=0 QTime=3
+2019-04-29 22:00:42.189 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:2019%2520cricket%2520matches&indent=true&rows=100&wt=json} hits=37313 status=0 QTime=5
+2019-04-29 22:00:56.448 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:upcoming%2520cricket%2520match&indent=true&rows=100&wt=json} hits=41202 status=0 QTime=4
+2019-04-29 22:19:33.345 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket&_=1556574700941} hits=77727 status=0 QTime=63
+2019-04-29 22:20:49.938 ERROR (qtp142666848-22) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-29 22:20:49.942 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket+and+url:cricket&_=1556574700941} status=400 QTime=109
+2019-04-29 22:20:56.616 ERROR (qtp142666848-43) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:cricket&url:cricket': Encountered " ":" ": "" at line 1, column 19.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:cricket&url:cricket': Encountered " ":" ": "" at line 1, column 19.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 19.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-04-29 22:20:56.617 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%26url:cricket&_=1556574700941} status=400 QTime=13
+2019-04-29 22:21:18.014 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket&_=1556574700941} hits=77727 status=0 QTime=0
+2019-04-29 22:21:30.285 ERROR (qtp142666848-43) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'score', pos=5
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:276)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-29 22:21:30.286 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket&sort=score&_=1556574700941} status=400 QTime=20
+2019-04-29 22:21:34.389 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket&_=1556574700941} hits=77727 status=0 QTime=1
+2019-04-29 22:21:41.635 ERROR (qtp142666848-43) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'boost', pos=5
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:276)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-29 22:21:41.636 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket&sort=boost&_=1556574700941} status=400 QTime=1
+2019-04-29 22:21:45.934 ERROR (qtp142666848-22) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'boost:', pos=6
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:276)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-29 22:21:45.935 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket&sort=boost:&_=1556574700941} status=400 QTime=2
+2019-04-29 22:21:50.554 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket&_=1556574700941} hits=77727 status=0 QTime=0
+2019-04-29 22:22:50.899 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%26+content:cricket&wt=json&_=1556574700941} hits=77727 status=0 QTime=4
+2019-04-29 22:23:09.353 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%26+url:cricket&wt=json&_=1556574700941} hits=86709 status=0 QTime=5
+2019-04-29 22:23:20.538 ERROR (qtp142666848-16) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1292)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:434)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-29 22:23:20.540 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket+%26+url:cricket&wt=json&_=1556574700941} status=400 QTime=5
+2019-04-29 22:23:27.236 ERROR (qtp142666848-17) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:cricket&url:cricket': Encountered " ":" ": "" at line 1, column 19.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:cricket&url:cricket': Encountered " ":" ": "" at line 1, column 19.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 19.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-04-29 22:23:27.236 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%26url:cricket&wt=json&_=1556574700941} status=400 QTime=2
+2019-04-29 22:23:30.509 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%26+url:cricket&wt=json&_=1556574700941} hits=86709 status=0 QTime=0
+2019-04-29 22:23:41.885 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket||+url:cricket&wt=json&_=1556574700941} hits=86709 status=0 QTime=1
+2019-04-29 22:23:44.553 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket||+url:cricket&wt=json&_=1556574700941} hits=86709 status=0 QTime=0
+2019-04-29 22:23:50.403 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:cricket%26+url:cricket&wt=json&_=1556574700941} hits=86709 status=0 QTime=0
+2019-04-29 22:26:34.668 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world%2520cup&indent=true&content:cricket%2520world%2520cup=&rows=100&wt=json} hits=37021 status=0 QTime=4
+2019-04-29 22:26:58.744 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket&indent=true&content:cricket=&rows=100&wt=json} hits=30376 status=0 QTime=2
+2019-04-29 22:27:41.567 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520world&indent=true&rows=100&wt=json} hits=36782 status=0 QTime=2
+2019-05-01 02:53:43.522 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Cricket%2520news&indent=true&rows=100&wt=json} hits=37640 status=0 QTime=188
+2019-05-01 02:54:10.024 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Cricket%2520news&indent=true&rows=100&wt=json} hits=37640 status=0 QTime=4
+2019-05-01 02:54:20.340 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Cricket%2520news&indent=true&rows=100&wt=json} hits=37640 status=0 QTime=1
+2019-05-01 02:54:32.122 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Cricket%2520news&indent=true&rows=15&wt=json} hits=37640 status=0 QTime=0
+2019-05-01 02:54:36.860 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520indian%2520ipl%2520news&indent=true&rows=15&wt=json} hits=38918 status=0 QTime=35
+2019-05-01 02:55:43.535 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:updated%2520news&indent=true&rows=100&wt=json} hits=21438 status=0 QTime=18
+2019-05-01 02:55:46.167 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:updated%2520news&indent=true&rows=100&wt=json} hits=21438 status=0 QTime=1
+2019-05-01 02:55:47.247 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:updated%2520news&indent=true&rows=100&wt=json} hits=21438 status=0 QTime=0
+2019-05-01 02:56:02.418 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:updated%2520cricket%2520news&indent=true&rows=100&wt=json} hits=37644 status=0 QTime=9
+2019-05-01 02:56:08.316 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:updated%2520cricket%2520news&indent=true&rows=100&wt=json} hits=37644 status=0 QTime=0
+2019-05-01 02:56:14.808 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:updated%2520cricket%2520news&indent=true&rows=100&wt=json} hits=37644 status=0 QTime=1
+2019-05-01 02:59:05.506 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Rahul%2520Dravid&indent=true&rows=100&wt=json} hits=8687 status=0 QTime=24
+2019-05-01 02:59:46.470 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:top%2520player%2520of%25202019%2520cricket&indent=true&rows=100&wt=json} hits=42382 status=0 QTime=14
+2019-05-01 03:00:09.204 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:player%2520of%25202019%2520cricket&indent=true&rows=100&wt=json} hits=42205 status=0 QTime=14
+2019-05-01 03:00:20.683 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:history%2520of%2520cricket&indent=true&rows=100&wt=json} hits=39216 status=0 QTime=6
+2019-05-01 03:01:00.697 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520matches&indent=true&rows=100&wt=json} hits=36190 status=0 QTime=5
+2019-05-01 03:01:05.522 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520matches%2520schedule&indent=true&rows=100&wt=json} hits=36221 status=0 QTime=9
+2019-05-01 03:01:09.461 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520matches&indent=true&rows=100&wt=json} hits=36190 status=0 QTime=2
+2019-05-01 03:01:24.153 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:royal%2520challengers&indent=true&rows=100&wt=json} hits=8710 status=0 QTime=1
+2019-05-01 03:01:42.074 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK&indent=true&rows=100&wt=json} hits=866 status=0 QTime=3
+2019-05-01 03:02:12.455 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:betting%2520in%2520cricket&indent=true&rows=100&wt=json} hits=38384 status=0 QTime=11
+2019-05-01 03:02:21.855 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520betting&indent=true&rows=100&wt=json} hits=36218 status=0 QTime=9
+2019-05-01 03:02:49.043 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=7
+2019-05-01 03:03:11.679 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520wiki&indent=true&rows=100&wt=json} hits=62222 status=0 QTime=14
+2019-05-01 03:04:29.271 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520wiki&indent=true&rows=100&wt=json} hits=62222 status=0 QTime=2
+2019-05-01 03:05:49.051 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Rahul%2520Dravid&indent=true&rows=100&wt=json} hits=8687 status=0 QTime=1
+2019-05-01 03:05:50.083 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Rahul%2520Dravid&indent=true&rows=100&wt=json} hits=8687 status=0 QTime=1
+2019-05-01 03:06:14.587 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Rahul%2520Dravid&indent=true&rows=100&wt=json} hits=8687 status=0 QTime=1
+2019-05-01 03:06:34.009 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:top%2520player%2520of%25202019%2520cricket&indent=true&rows=100&wt=json} hits=42382 status=0 QTime=2
+2019-05-01 03:06:36.072 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:top%2520player%2520of%25202019%2520cricket&indent=true&rows=100&wt=json} hits=42382 status=0 QTime=3
+2019-05-01 03:06:46.351 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:top%2520player%2520of%25202019%2520cricket&indent=true&rows=100&wt=json} hits=42382 status=0 QTime=2
+2019-05-01 03:07:05.360 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:history%2520of%2520cricket&indent=true&rows=100&wt=json} hits=39216 status=0 QTime=1
+2019-05-01 03:07:06.917 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:history%2520of%2520cricket&indent=true&rows=100&wt=json} hits=39216 status=0 QTime=2
+2019-05-01 03:07:07.582 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:history%2520of%2520cricket&indent=true&rows=100&wt=json} hits=39216 status=0 QTime=2
+2019-05-01 03:07:25.517 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:royal%2520challengers&indent=true&rows=100&wt=json} hits=8710 status=0 QTime=1
+2019-05-01 03:07:27.455 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:royal%2520challengers&indent=true&rows=100&wt=json} hits=8710 status=0 QTime=2
+2019-05-01 03:07:32.994 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:royal%2520challengers&indent=true&rows=100&wt=json} hits=8710 status=0 QTime=0
+2019-05-01 03:07:46.113 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK&indent=true&rows=100&wt=json} hits=866 status=0 QTime=2
+2019-05-01 03:07:47.564 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK&indent=true&rows=100&wt=json} hits=866 status=0 QTime=2
+2019-05-01 03:07:52.171 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK&indent=true&rows=100&wt=json} hits=866 status=0 QTime=0
+2019-05-01 03:08:05.587 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=23
+2019-05-01 03:08:13.277 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 03:08:47.888 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=4
+2019-05-01 03:08:51.516 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 03:08:52.856 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 18:20:09.024 INFO  (qtp142666848-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Indian%2520cricket%2520team&indent=true&rows=100&wt=json} hits=37318 status=0 QTime=102
+2019-05-01 18:20:16.558 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Indian%2520cricket%2520team&indent=true&rows=100&wt=json} hits=37318 status=0 QTime=1
+2019-05-01 18:20:19.510 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Indian%2520cricket%2520team&indent=true&rows=100&wt=json} hits=37318 status=0 QTime=3
+2019-05-01 18:20:21.966 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Indian%2520cricket%2520team&indent=true&rows=100&wt=json} hits=37318 status=0 QTime=1
+2019-05-01 18:20:40.665 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Indian%2520cricket%2520team&indent=true&rows=100&wt=json} hits=37318 status=0 QTime=2
+2019-05-01 18:20:42.294 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Indian%2520cricket%2520team&indent=true&rows=15&wt=json} hits=37318 status=0 QTime=1
+2019-05-01 18:20:42.701 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:Indian%2520cricket%2520team&indent=true&rows=100&wt=json} hits=37318 status=0 QTime=1
+2019-05-01 18:20:46.997 INFO  (qtp142666848-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520indian%2520news%2520team%2520uae%2520tag%2520repres&indent=true&rows=15&wt=json} hits=39840 status=0 QTime=14
+2019-05-01 18:33:09.599 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=100&wt=json} hits=12633 status=0 QTime=17
+2019-05-01 18:33:19.206 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=100&wt=json} hits=12633 status=0 QTime=2
+2019-05-01 18:33:20.875 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=100&wt=json} hits=12633 status=0 QTime=12
+2019-05-01 18:33:25.741 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=100&wt=json} hits=12633 status=0 QTime=1
+2019-05-01 18:33:28.974 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=100&wt=json} hits=12633 status=0 QTime=1
+2019-05-01 18:33:35.229 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=15&wt=json} hits=12633 status=0 QTime=1
+2019-05-01 18:33:38.580 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=100&wt=json} hits=12633 status=0 QTime=3
+2019-05-01 18:33:40.774 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:icc%2520women%2520cup%2520cricket%2520india%2520world%2520uae&indent=true&rows=15&wt=json} hits=39825 status=0 QTime=23
+2019-05-01 18:33:49.451 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520world%2520cup&indent=true&rows=100&wt=json} hits=12633 status=0 QTime=2
+2019-05-01 18:54:42.763 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=16
+2019-05-01 18:54:53.264 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=4
+2019-05-01 18:55:02.867 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 18:55:09.125 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 18:58:17.038 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 18:58:20.515 INFO  (qtp142666848-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=4
+2019-05-01 18:58:21.291 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 18:58:24.366 INFO  (qtp142666848-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 18:58:29.442 INFO  (qtp142666848-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=3
+2019-05-01 18:58:30.427 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=15&wt=json} hits=36239 status=0 QTime=3
+2019-05-01 19:05:53.878 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=3
+2019-05-01 19:05:58.633 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:06:03.004 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:06:07.708 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=3
+2019-05-01 19:06:13.943 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:08:35.345 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:08:42.580 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=0
+2019-05-01 19:08:48.181 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:08:55.310 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=0
+2019-05-01 19:08:59.904 INFO  (qtp142666848-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:10:47.117 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=5
+2019-05-01 19:10:54.687 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:10:57.044 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=3
+2019-05-01 19:11:03.374 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:11:07.060 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:11:15.416 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=15&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:26:45.391 INFO  (qtp142666848-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=38
+2019-05-01 19:26:52.462 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:26:55.064 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:27:00.409 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:27:04.598 INFO  (qtp142666848-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=4
+2019-05-01 19:27:10.772 INFO  (qtp142666848-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=3
+2019-05-01 19:27:13.885 INFO  (qtp142666848-48) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=6
+2019-05-01 19:27:27.114 INFO  (qtp142666848-48) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:27:36.876 INFO  (qtp142666848-48) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:28:25.888 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:28:31.037 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=2
+2019-05-01 19:28:33.671 INFO  (qtp142666848-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=1
+2019-05-01 19:32:52.407 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 19:32:58.382 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=4
+2019-05-01 19:33:01.702 INFO  (qtp142666848-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=0
+2019-05-01 19:33:06.743 INFO  (qtp142666848-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 19:33:08.660 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 19:35:41.898 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520cricket&indent=true&rows=100&wt=json} hits=36239 status=0 QTime=5
+2019-05-01 19:35:47.780 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 19:35:56.725 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 19:35:59.188 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=3
+2019-05-01 19:36:03.861 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 19:36:09.534 INFO  (qtp142666848-43) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=4
+2019-05-01 20:13:29.016 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=21
+2019-05-01 20:13:33.951 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=4
+2019-05-01 20:13:35.396 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 20:13:36.845 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 20:13:39.532 INFO  (qtp142666848-38) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 20:13:44.198 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=15&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 20:14:00.644 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:ipl%2520group%2520last%2520match%2520vs%2520rcb%2520csk&indent=true&rows=15&wt=json} hits=31023 status=0 QTime=26
+2019-05-01 21:08:09.273 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK&indent=true&rows=100&wt=json} hits=866 status=0 QTime=37
+2019-05-01 21:08:21.957 ERROR (qtp142666848-37) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-05-01 21:08:21.970 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:&indent=true&rows=100&wt=json} status=400 QTime=126
+2019-05-01 21:08:23.165 ERROR (qtp142666848-37) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-05-01 21:08:23.165 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:&indent=true&rows=100&wt=json} status=400 QTime=5
+2019-05-01 21:08:24.017 ERROR (qtp142666848-37) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-05-01 21:08:24.022 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:&indent=true&rows=100&wt=json} status=400 QTime=11
+2019-05-01 21:08:24.457 ERROR (qtp142666848-37) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-05-01 21:08:24.462 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:&indent=true&rows=100&wt=json} status=400 QTime=13
+2019-05-01 21:08:26.090 ERROR (qtp142666848-37) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-05-01 21:08:26.095 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:&indent=true&rows=100&wt=json} status=400 QTime=17
+2019-05-01 21:08:33.329 ERROR (qtp142666848-37) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'url:': Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 4.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2019-05-01 21:08:33.334 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:&indent=true&rows=100&wt=json} status=400 QTime=13
+2019-05-01 21:08:40.571 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520VS%2520RCB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 21:08:44.973 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520VS%2520RCB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=3
+2019-05-01 21:08:45.977 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520VS%2520RCB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 21:08:47.010 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520VS%2520RCB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 21:08:50.650 INFO  (qtp142666848-53) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520VS%2520RCB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=5
+2019-05-01 21:08:52.434 INFO  (qtp142666848-55) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520VS%2520RCB&indent=true&rows=15&wt=json} hits=27670 status=0 QTime=4
+2019-05-01 21:09:09.661 INFO  (qtp142666848-55) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:ipl%2520group%2520last%2520match%2520vs%2520rcb%2520csk&indent=true&rows=15&wt=json} hits=31023 status=0 QTime=4
+2019-05-01 21:44:58.388 INFO  (qtp142666848-48) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520vs%2520RcB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=23
+2019-05-01 21:45:02.989 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520vs%2520RcB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 21:45:04.660 INFO  (qtp142666848-48) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520vs%2520RcB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=3
+2019-05-01 21:45:08.184 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520vs%2520RcB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 21:45:11.653 INFO  (qtp142666848-48) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520vs%2520RcB&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 21:45:14.347 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:CSK%2520vs%2520RcB&indent=true&rows=15&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 21:45:31.964 INFO  (qtp142666848-37) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:ipl%2520group%2520last%2520match%2520vs%2520rcb%2520csk&indent=true&rows=15&wt=json} hits=31023 status=0 QTime=4
+2019-05-01 21:54:07.605 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520in%2520cricket&indent=true&rows=100&wt=json} hits=38405 status=0 QTime=70
+2019-05-01 21:54:13.318 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520in%2520cricket&indent=true&rows=100&wt=json} hits=38405 status=0 QTime=1
+2019-05-01 21:54:14.280 INFO  (qtp142666848-52) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520in%2520cricket&indent=true&rows=100&wt=json} hits=38405 status=0 QTime=6
+2019-05-01 21:54:19.075 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520in%2520cricket&indent=true&rows=100&wt=json} hits=38405 status=0 QTime=0
+2019-05-01 21:54:20.631 INFO  (qtp142666848-52) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520in%2520cricket&indent=true&rows=100&wt=json} hits=38405 status=0 QTime=2
+2019-05-01 21:54:22.104 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:women%2520in%2520cricket&indent=true&rows=15&wt=json} hits=38405 status=0 QTime=3
+2019-05-01 21:54:39.603 INFO  (qtp142666848-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:id%2520tell%2520qualifi%2520cricket%2520uae%2520women&indent=true&rows=15&wt=json} hits=36721 status=0 QTime=21
+2019-05-01 22:01:08.564 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=20
+2019-05-01 22:02:04.677 INFO  (qtp142666848-55) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=2
+2019-05-01 22:02:21.393 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=1
+2019-05-01 22:02:28.014 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=3
+2019-05-01 22:02:29.867 INFO  (qtp142666848-39) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=100&wt=json} hits=27670 status=0 QTime=4
+2019-05-01 22:02:33.338 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:RCB%2520VS%2520CSK&indent=true&rows=15&wt=json} hits=27670 status=0 QTime=0
+2019-05-01 22:02:56.206 INFO  (qtp142666848-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:ipl%2520group%2520last%2520match%2520vs%2520rcb%2520csk&indent=true&rows=15&wt=json} hits=31023 status=0 QTime=2
+2019-05-01 22:05:39.082 INFO  (qtp142666848-53) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520bat&indent=true&rows=100&wt=json} hits=36945 status=0 QTime=28
+2019-05-01 22:05:52.659 INFO  (qtp142666848-53) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=url:cricket%2520bat&indent=true&rows=100&wt=json} hits=36945 status=0 QTime=1
+2019-05-02 05:24:18.532 INFO  (qtp142666848-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556774658335} status=0 QTime=27
+2019-05-02 05:24:18.571 INFO  (qtp142666848-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1556774658335} status=0 QTime=64
+2019-05-02 05:24:18.710 INFO  (qtp142666848-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556774658335} status=0 QTime=0
+2019-05-02 05:24:18.718 INFO  (qtp142666848-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1556774658335} status=0 QTime=4
+2019-05-02 05:24:18.748 INFO  (qtp142666848-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556774658335} status=0 QTime=243
+2019-05-02 05:24:18.794 INFO  (qtp142666848-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556774658335} status=0 QTime=40
+2019-05-02 05:24:21.748 INFO  (qtp142666848-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1556774661699} status=0 QTime=0
+2019-05-02 05:24:21.750 INFO  (qtp142666848-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1556774661699} status=0 QTime=1
+2019-05-02 05:24:21.783 INFO  (qtp142666848-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1556774661699} status=0 QTime=34
+2019-05-09 03:51:57.904 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1766505436
+2019-05-09 03:51:57.910 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-05-09 03:51:57.910 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-05-09 03:51:57.910 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-05-09 03:51:57.919 INFO  (coreCloseExecutor-12-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@51b97c9e
+2019-05-09 03:51:57.919 INFO  (coreCloseExecutor-12-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=1371110558
+2019-05-09 03:51:57.947 ERROR (coreCloseExecutor-12-thread-1) [   x:nutch] o.a.s.u.SolrIndexWriter Error closing IndexWriter
+java.nio.file.NoSuchFileException: /Users/harshverma/Downloads/IR_Final/IR/crawling/solr-7.3.1/solr-7.3.1/server/solr/nutch/data/index
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixPath.toRealPath(UnixPath.java:837)
+	at org.apache.lucene.util.IOUtils.spins(IOUtils.java:520)
+	at org.apache.lucene.util.IOUtils.spins(IOUtils.java:503)
+	at org.apache.lucene.index.ConcurrentMergeScheduler.initDynamicDefaults(ConcurrentMergeScheduler.java:412)
+	at org.apache.lucene.index.ConcurrentMergeScheduler.merge(ConcurrentMergeScheduler.java:500)
+	at org.apache.lucene.index.IndexWriter.waitForMerges(IndexWriter.java:2621)
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:1275)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1319)
+	at org.apache.solr.update.SolrIndexWriter.close(SolrIndexWriter.java:280)
+	at org.apache.solr.update.DirectUpdateHandler2.closeWriter(DirectUpdateHandler2.java:900)
+	at org.apache.solr.update.DefaultSolrCoreState.closeIndexWriter(DefaultSolrCoreState.java:105)
+	at org.apache.solr.update.DefaultSolrCoreState.close(DefaultSolrCoreState.java:402)
+	at org.apache.solr.update.SolrCoreState.decrefSolrCoreState(SolrCoreState.java:83)
+	at org.apache.solr.core.SolrCore.close(SolrCore.java:1564)
+	at org.apache.solr.core.SolrCores.lambda$close$0(SolrCores.java:141)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
