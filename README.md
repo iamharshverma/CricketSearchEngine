@@ -1,4 +1,7 @@
 #CricketSearchEngine
+**This repo contains the code of building cricket search engine from scratch and details of respective modules i.e crawling , clustering, indexing, query-expansion, webUI, Server**
+
+
 **Cricket Search Engine**
 
 ![1](Screenshot/ppt1.png)
